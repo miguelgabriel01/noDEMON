@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+</head>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="formulario.css">
+<style>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+ margin:0;
+ padding:0;
+          font-family: comic sans MS;
+
+}
+
+#princ{
+      position:fixed;
+      width:30%;
+      height:100%;
+      background-color:rgba(0,0,0,0.2);
+      left:-30%;
+
+}
+
+#princ li{
+         color:white;
+         
+         font-size:30px;
+         padding:30px;
+         border-bottom:1px solid gray;
+         text-align:center;
+                  font-family: comic sans MS;
+
+}
+.menulateral{
+         color:white;
+         text-decoration: none;
+                  font-family: comic sans MS;
+
+         font-size:40px;
+         padding:30px;
+         border-bottom:1px solid gray;
+         text-align:center;
+         transition: all 0.4s ease-out;
+         animation-duration: 3s;
+}
+
+.menulateral:hover{
+  color: darkcyan;
+  transform: translateY(-30px);
+}
+
+.meio{
+     position:absolute;
+     left:105%;
+     top:15px;
+}
+
+.meio span{
+          display:block;
+          background:white;
+          width:30px;
+          height:5px;
+          margin:3px;
+          cursor: pointer;
+}
+
+#princ.active{
+             left:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+    
+<script type="text/javascript">
+ 
+ 
+ 
+function menu2(){
+    document.getElementById('princ').classList.toggle('active');
+}
+ 
+ 
+</script>
+
+<body>
+
+
+
+
+<div id="princ" onclick="menu2()">
+     <div class="meio" > 
+      <span></span>
+      <span></span>
+      <span></span>
+     </div>
+    
+    <ul>
+      <li><a href="#" class="menulateral">Cadastro</a></li>
+      <li><a href="#" class="menulateral">Recuperar</a></li>
+      <li><a href="#" class="menulateral">Duvidas</a></li>
+      <li><a href="#" class="menulateral">Suporte</a></li>
+    </ul>
+    
+    </div>
+
+
+<nav>
+
+    <a href="index.html" class="link" >Inicio</a>
+   
+    
+</nav>
+
+
+<div class="principal">
+  
+  <h2>Usuário</h2>
+    
+    <form action="#" method="POST">
+
+        <div class="meio">
+           <input type="text" name="nome" required="">
+            <label>Nome</label>
+        
+        </div>
+
+              <div class="meio">
+               <input type="password" name="senha" required="">
+              <label>Senha</label>
+        
+        </div>    
+    
+        <input type="submit" name="" value="Entrar" onclick="window.location='home.html';">
+       </form>
+       
+       </div>
+</body>
+</html>
