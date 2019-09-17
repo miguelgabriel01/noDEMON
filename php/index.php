@@ -244,8 +244,7 @@ element.addEventListener("click", function(e){
 <li><a href="login.php" class="login">Criar</a></li>
 <li><a href="sobre.php">Sobre</a></li>
 <li><a href="#">Suporte</a></li>
-
-
+</nav>
     <div class="img">
 	<h1 id="logo" class="run-animation">
   
