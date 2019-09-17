@@ -237,6 +237,35 @@ element.addEventListener("click", function(e){
 </style>
 
 <body>
+<div class="principal">
+	<h2> Cadastro de usuário</h2>
+  <form action="adicionar.php" method="POST">
+
+   <div class="meio">
+      <input type="text" name="nome" required="">
+      <label>Nome</label>
+   </div>
+
+    <div class="meio">
+       <input type="email" name="mail" id="email" required="">
+       <label>E-mail</label>
+    </div> 
+
+    <div class="meio">
+       <input type="password" name="senha" required="" >
+       <label>Senha</label>
+    </div> 
+
+    <div class="meio">
+       <input type="password" name="senhac" required="">
+       <label>Confirma senha</label>
+    </div> 
+
+    <input type="submit" name="" value="Salvar">
+     
+ </form>
+       
+</div>
 
 </body>
 </html>
