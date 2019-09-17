@@ -89,6 +89,11 @@ color: black;
 	background-position: center;
 }
 */
+
+
+
+
+
 .principal{
 	position: absolute;
 	top:350%;
@@ -158,7 +163,16 @@ font-size:16px;
 	border-radius:10px;
 
 }
- @keyframes my-animation {        
+
+
+
+
+
+
+
+
+
+	@keyframes my-animation {        
   from {
     opacity : 0;
     left : -500px;
@@ -223,6 +237,28 @@ element.addEventListener("click", function(e){
 </style>
 
 <body>
+
+
+<nav>
+	<a href="#" class="logo">SERMR</a>
+<li><a href="index.php" class="login">Login</a></li>
+<li><a href="sobre.php">Sobre</a></li>
+<li><a href="#">Suporte</a></li>
+
+
+    <div class="img">
+	<h1 id="logo" class="run-animation">
+  
+</h1>
+
+<div class="p">
+ 
+
+
+
+</div>
+
+
 <div class="principal">
 	<h2> Cadastro de usuário</h2>
   <form action="adicionar.php" method="POST">
@@ -253,5 +289,6 @@ element.addEventListener("click", function(e){
        
 </div>
 
-</body>
+  
+ </body>
 </html>
