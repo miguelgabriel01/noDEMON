@@ -89,11 +89,6 @@ color: black;
 	background-position: center;
 }
 */
-
-
-
-
-
 .principal{
 	position: absolute;
 	top:350%;
@@ -163,16 +158,7 @@ font-size:16px;
 	border-radius:10px;
 
 }
-
-
-
-
-
-
-
-
-
-	@keyframes my-animation {        
+ @keyframes my-animation {        
   from {
     opacity : 0;
     left : -500px;
