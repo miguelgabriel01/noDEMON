@@ -11,8 +11,6 @@
 	padding: 0px;
 	        font-family: comic sans MS;
 	            
-
-
 }	
 nav{
 	width: 100%;
