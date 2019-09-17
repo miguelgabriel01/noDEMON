@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.2">
 <title>index</title>
-</head>
 <style>
 
 *{
@@ -203,6 +202,8 @@ font-size:16px;
 }
  
 </style>
+	
+	
 <script type="text/javascript">
 	
 	// This changes everything
@@ -233,8 +234,7 @@ element.addEventListener("click", function(e){
 
 
 
-
-</style>
+	</head>
 
 <body>
 
