@@ -38,8 +38,6 @@ li{
   bottom: -4%;
   padding:  8px;
  }
-
-
 h3{
   color: white;
   font-size: 60px;
