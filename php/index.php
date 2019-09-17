@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=0.2">
 <title>index</title>
 <style>
-
 *{
 	margin: 0px;
 	padding: 0px;
