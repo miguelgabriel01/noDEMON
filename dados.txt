@@ -23,8 +23,8 @@ viando dados referente as Escolas:
                    
    - Dados No Enem
    
-  Ciências Humanas      Ciências Exatas       Redação           Linguagens     Ciências Naturais
-        461.13               465.05            490.00             461.73              463.72
+ Media Geral   Ciências Humanas      Ciências Exatas       Redação           Linguagens     Ciências Naturais   Participantes
+     468              461.13               465.05            490.00             461.73              463.72            31
  
  
  Nota de Avaliação no IDEB 2017/2018:  4.0
@@ -41,6 +41,11 @@ viando dados referente as Escolas:
                   
  Matemática      Alunos   Índice de aprovação  Índice de Reprovação
                   83             5%                   95%  
+                  
+- Dados No Enem
+   
+  Média Geral   Ciências Humanas      Ciências Exatas       Redação           Linguagens     Ciências Naturais   Participantes
+      451             466.57               454.81            444.00             449.51              441.36            20
  
  Nota de Avaliação no IDEB 2017/2018:  3.8
  
@@ -54,6 +59,11 @@ viando dados referente as Escolas:
                   
  Matemática      Alunos   Índice de aprovação  Índice de Reprovação
                     57             24%                   76%  
+                    
+- Dados No Enem
+   
+  Média Geral   Ciências Humanas      Ciências Exatas       Redação           Linguagens     Ciências Naturais   Participantes
+      491             485.15               480.44            532.75             480.47              476.42            108
  
  Nota de Avaliação no IDEB 2017/2018:  5.4
      
