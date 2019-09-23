@@ -1,0 +1,52 @@
+  
+-  O arquivo que estou enviando, será responsável pelo 
+levantando, será responsável por dados referente a es-
+colas do ensino médio, como foi solicitado, estarei en
+viando dados referente as Escolas: 
+       - Nova Cruz
+       - Brasilino José de Carvalho
+       - Desembargador Carlos Xavier Paes Barreto
+ 
+ 
+ 
+-- Escola Desembargador Carlos Xavier Paes Barreto
+
+  - Os Dados Que serão mostrados conforme a prova Brasil
+  2017/2018 Realizada pelo ministério da Educação.
+  
+ Português      Alunos   Índice de aprovação  Índice de Reprovação
+                  82             31%                   69% 
+                  
+                  
+ Matemática      Alunos   Índice de aprovação  Índice de Reprovação
+                   82             8%                   92%  
+ 
+ Nota de Avaliação no IDEB 2017/2018:  4.0
+ 
+ 
+ 
+ 
+ -- Escola Nova Cruz
+ 
+ 
+  Português      Alunos   Índice de aprovação  Índice de Reprovação
+                  83             11%                   89% 
+                  
+                  
+ Matemática      Alunos   Índice de aprovação  Índice de Reprovação
+                  83             5%                   95%  
+ 
+ Nota de Avaliação no IDEB 2017/2018:  3.8
+ 
+ 
+ 
+ -- Escola Brasilino De Carvalho
+ 
+   Português      Alunos   Índice de aprovação  Índice de Reprovação
+                    57             35%                   65% 
+                  
+                  
+ Matemática      Alunos   Índice de aprovação  Índice de Reprovação
+                    57             24%                   76%  
+ 
+ Nota de Avaliação no IDEB 2017/2018:  5.4
