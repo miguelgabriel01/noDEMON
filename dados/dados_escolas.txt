@@ -26,6 +26,14 @@ viando dados referente as Escolas:
    
  Media Geral   Ciências Humanas      Ciências Exatas       Redação           Linguagens     Ciências Naturais   Participantes
      468              461.13               465.05            490.00             461.73              463.72            31
+     
+     
+   Endereço: R. Carlos Paes Barreto, s/n - Loteamento Redenção, Igarassu - PE, 53610-430;
+   Telefone: (81) 3543-3079;
+   Cidade: Igarassu;
+   Bairro: Saramandaia;
+   Unidade Federativa: Pernambuco;
+   
  
  
  Nota de Avaliação no IDEB 2017/2018:  4.0
@@ -47,6 +55,14 @@ viando dados referente as Escolas:
    
   Média Geral   Ciências Humanas      Ciências Exatas       Redação           Linguagens     Ciências Naturais   Participantes
       451             466.57               454.81            444.00             449.51              441.36            20
+      
+   
+   Endereço: Rua Anita Fonseca, s/n - Igarassu - PE, 53660-000;
+   Telefone: (081) 3181-4887
+   Cidade: Igarassu;
+   Bairro: Nova Cruz;
+   Unidade Federativa: Pernambuco;
+      	
  
  Nota de Avaliação no IDEB 2017/2018:  3.8
  
@@ -65,5 +81,12 @@ viando dados referente as Escolas:
    
   Média Geral   Ciências Humanas      Ciências Exatas       Redação           Linguagens     Ciências Naturais   Participantes
       491             485.15               480.44            532.75             480.47              476.42            108
+      
+   Endereço: R. Camutanga - Bonfim, Igarassu - PE, 53637-130;
+   Telefone: (081) 3181-4826
+   Cidade: Igarassu;
+   Bairro: Loteamento Bonfim;
+   Unidade Federativa: Pernambuco;
+      
  
  Nota de Avaliação no IDEB 2017/2018:  5.4
