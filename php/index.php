@@ -12,10 +12,10 @@
 	<a href="">SNRC</a>
 	<nav>
 		<li><a href="#">Inicio</a></li>
-		<li><a href="sobre.html">Sobre</a></li>
+		<li><a href="sobre.php">Sobre</a></li>
 		<li><a href="#">Mapa</a></li>
-		<li><a href="escolas.html">Escolas</a></li>
-		<li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+		<li><a href="escolas.php">Escolas</a></li>
+		<li><a href="desenvolvedores.php">Desenvolvedores</a></li>
 
 	</nav>
 </header>
