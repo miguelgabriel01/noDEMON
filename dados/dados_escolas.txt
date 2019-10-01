@@ -99,3 +99,8 @@ viando dados referente as Escolas:
  Sites que podem influenciar O nosso portal:
  
  - http://www.escoladofuturo.com.br/
+ * Descrição do site - Apresenta  funcionalidades Para encontrar escolas
+ nos 3 níveis da educação;
+ - Promove uma uma biblioteca online;
+ - Palestras e oficinas;
+ - Bolsas de Estudo.
