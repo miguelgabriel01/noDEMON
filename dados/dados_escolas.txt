@@ -104,3 +104,8 @@ viando dados referente as Escolas:
  - Promove uma uma biblioteca online;
  - Palestras e oficinas;
  - Bolsas de Estudo.
+ 
+ - https://www.melhorescola.com.br
+ * Descrição do Site - Buscador  de Escola, 
+ tendo em vista a mensalidade, bolsa de estudo,
+ principais escolas de acordo com a avaliação;
