@@ -1,0 +1,93 @@
+*{
+margin: 0;
+padding: 0;
+font-size: 100%;
+box-sizing: border-box;
+font-family: comic sans MS;
+}
+
+/*menu*/
+
+nav,ul{
+list-style: none;
+}
+
+a{
+text-decoration: none;
+color: white;
+cursor: pointer;
+opacity: 0.9;
+font-size: 20px;
+}
+
+a:hover{
+opacity: 1;
+}
+
+
+header{
+background-color:black ;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+}
+
+header nav{
+display: flex;
+}
+
+header li a{
+color: white;
+}
+           
+header li{
+margin: 0 15px;
+}
+
+header li:first-child{
+margin-left:0; 
+}
+
+header li:last-child{
+margin-right: 0;
+}
+
+@media(max-width: 700px){
+header{
+flex-direction: column;
+}
+
+}
+
+
+
+
+.formulario{
+display:flex;
+border:2px solid black;
+margin-top:30px;
+height:600px;
+width:100%;
+flex-direction:row;
+justify-content:center;
+align-items:center;
+
+}
+.cadastro{
+display:flex;
+width:300px;
+height:200px;
+background:darkcyan;
+color:white;
+text-align:center;
+font-size:20px;
+text-decoration:none;
+margin:10px;
+justify-content:center;
+align-items:center;
+}
