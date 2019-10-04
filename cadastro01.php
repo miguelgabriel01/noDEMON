@@ -23,7 +23,7 @@
 
 <div class="formulário">
 	
-	<h2>usuário</h2>
+	<h2>Usuário</h2>
     
     <form>
 
