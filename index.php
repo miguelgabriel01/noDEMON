@@ -25,7 +25,7 @@
 	<h3>Encontre o melhor centro de ensino na sua região..</h3>
 	
 	<form method="" action="#">
-	<input type="text" name="pesquisa" id="pes" placeholder="encontrar escolas.." >
+	<input type="text" name="pesquisa" id="pes" placeholder="Encontrar escolas.." >
 	<input type="submit" value="Pesquisar" id="enviar" >
 	</form>
 	
