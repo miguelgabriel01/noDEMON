@@ -12,7 +12,7 @@
 
 	<a href="">SNRC</a>
 	<nav>
-		<li><a href="index.php">Inicio</a></li>
+		<li><a href="index.php">Início</a></li>
 		<li><a href="sobre.php">Sobre</a></li>
 		<li><a href="#">Mapa</a></li>
 		<li><a href="escolas.php">Escolas</a></li>
@@ -23,7 +23,7 @@
 
 <div class="formulário">
 	
-	<h2>escola</h2>
+	<h2>Escola</h2>
     
     <form  action="php/addescola.php" method="POST" >
 
