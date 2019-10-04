@@ -28,7 +28,7 @@
 	  <ul class="img">
 	<li class="pequena" style="background-image: url('')"><a href=""><p class="obs">Encontre as melhores escolas para o seu filho..</p></a></li>  	
 	<li class="grande" style="background-image: url('')"><a href=""><p class="obs">Com a Melhor infraestrutura..</p></a></li>  	
-	<li class="grande" style="background-image: url('')"><a href=""><p class="obs">Melhor localizão da região..</p></a></li>  	
+	<li class="grande" style="background-image: url('')"><a href=""><p class="obs">Melhor localização da região..</p></a></li>  	
 	<li class="pequena" style="background-image: url('')"><a href=""><p class="obs">Com os melhores professores..</p></a></li>  	
 
 
