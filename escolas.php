@@ -25,7 +25,7 @@
 	<h3></h3>
 
  <form method="" action="#">
-	<input type="text" name="pesquisa" id="pes" placeholder="encontrar escola.." >
+	<input type="text" name="pesquisa" id="pes" placeholder="Encontrar escola.." >
 	<input type="submit" value="Pesquisar" id="enviar" >
  </form>
 
