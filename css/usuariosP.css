@@ -1,0 +1,161 @@
+*{
+margin: 0;
+padding: 0;
+font-size: 100%;
+box-sizing: border-box;
+font-family: comic sans MS;
+}
+
+/*menu*/
+
+nav,ul{
+list-style: none;
+}
+
+a{
+text-decoration: none;
+color: white;
+cursor: pointer;
+opacity: 0.9;
+font-size: 20px;
+}
+
+a:hover{
+opacity: 1;
+}
+
+
+header{
+background-color:black ;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+}
+
+header nav{
+display: flex;
+}
+
+header li a{
+color: white;
+}
+           
+header li{
+margin: 0 15px;
+}
+
+header li:first-child{
+margin-left:0; 
+}
+
+header li:last-child{
+margin-right: 0;
+}
+
+@media(max-width: 700px){
+header{
+flex-direction: column;
+}
+
+}
+
+
+/*imagem inicial*/
+
+
+.hero{
+background-image: url("../img/escritorio.jpg");
+color: #fff;
+text-align: center;
+background-size: cover;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+
+
+.hero h1{
+font-size: 4.2rem;
+margin-bottom: 15px;
+}
+.hero h3{
+font-size: 2rem;
+margin-bottom: 15px;
+}
+/*
+.hero .btn{
+background: rgba(0,0,0,0.5);
+border-radius: 4px;
+color: white;
+padding: 20px 50px;
+text-transform: uppercase;
+}
+
+*/
+
+/*barra de pesquisa*/
+
+/*
+
+#pes{
+
+background:white;
+width:700px;
+height:60px;
+border-radius:10px;
+color:white;
+text-align:center;
+font-size:30px;
+background:rgba(0,0,0,0.4);
+}
+
+
+form{
+display:flex;
+flex-direction:column;
+justify-content:center;
+
+}
+
+ #enviar{
+ display:flex;
+ width:100px;
+ height:50px;
+ color:white;
+ border:none; 
+ justify-content:center;
+ margin-left:300px;
+ margin-top:20px;
+ background:darkcyan;
+ }
+
+*/
+
+
+
+@media(max-width: 700px){
+h1{
+font-size: 2.5rem;
+}
+h3{
+font-size: 1.5rem;
+}
+
+}
+
+
+.fim{
+	display: flex;
+	width: 100%;
+	height: 500px;
+}
+
+*/
