@@ -21,7 +21,7 @@
 </header>
 
 <section class="hero">
-	<h1>alunos de IPI</h1>
+	<h1>Alunos de IPI</h1>
 	<h3>...</h3>
 
 </section>
