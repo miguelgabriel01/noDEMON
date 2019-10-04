@@ -22,8 +22,8 @@
 
  <section class="formulario" >
  
- <div class="cadastro"><a href="cadastroUsuario.php" >usuário</a></div>
- <div class=" cadastro"><a href="usuariospagos.php" >escola</a></div>
+ <div class="Cadastro"><a href="cadastroUsuario.php" >Usuário</a></div>
+ <div class=" Cadastro"><a href="usuariospagos.php" >Escola</a></div>
  
  </section>
 
