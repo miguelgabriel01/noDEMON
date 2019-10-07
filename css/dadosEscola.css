@@ -101,7 +101,9 @@ font-size: 3.2rem;
 margin-bottom: 15px;
 }
 .hero h3{
-font-size: 2rem;
+	border: 0.2px solid white;
+	width: 400px;
+ font-size: 2rem;
 margin-bottom: 15px;
 }
 
@@ -177,12 +179,13 @@ flex-direction: column;
 align-items: center;
 padding: 100px 50px;
 border: 1px solid black;
+border-bottom: none;
 width: 100%;
 height: 1400px;
 }
 
 .sobre h3{
-font-size: 2rem;
+font-size: 3rem;
 color: #191c03;
 margin-bottom: 25px;
 text-align: center;
@@ -190,8 +193,10 @@ text-align: center;
 
 .sobre p{
 max-width: 800px;
-margin-bottom: 35px;
+font-size: 1.5rem;
+margin-bottom: 55px;
 color: #191c03;
+align-items: flex-start;
 text-align: center;
 }
 
@@ -203,14 +208,14 @@ justify-content: center;
 align-items: baseline;
 align-content: stretch;
 padding:  20px 20px;
-margin-top:  70px;	
+margin-top:  10px;	
 }
 
 .sobre hr{
 width: 200px;
-height: 2px;
+height: 6px;
 background-color: darkcyan;
-margin-bottom: 70px;
+margin-top: 60px;
 border: none;
 }
 
@@ -261,10 +266,11 @@ flex-basis: 100%;
 	display: flex;
 	border: 1px solid pink;
 	width: 100%;
-    height: 400px;
+    height: 600px;
     justify-content: center;
     align-content: center;
     align-items: center;
+    padding: 
 }
 
 .principal{
@@ -274,17 +280,51 @@ flex-basis: 100%;
 }
 
 input{
-	width:300px;
-    height: 60px;
+	width:900px;
+    height: 80px;
     padding: 7px;
+    color: black;
+    font-size: 30px;
 }
 textarea{
-	background: pink;
-	width: 300px;
+	background: white;
+	width: 900px;
 	height: 120px;
+	margin-bottom: 20px;
+    margin-top: 20px;
+    color: black;
+    font-size: 30px;
+}
+
+#enviarEmail{
+	background: darkcyan;
+	color: white
 }
 
 
+.galeria{
+	display: flex;
+	width: 100%;
+	height: 800px;
+	border: 2px solid black;
+	background: orange;
+	   align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
 
+#subtituloGaleria{
+	display: flex;
+     color: white;
+	font-size: 60px;
 
+}
 
+#entrarGaleria{
+    display: flex;
+    color: white;
+	text-decoration: none;
+	font-size: 30px;
+    margin-top: 30px;
+}
