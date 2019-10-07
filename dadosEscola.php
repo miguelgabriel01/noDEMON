@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>formulario</title>
+	<title>DadosEscola</title>
 	<link rel="stylesheet" type="text/css" href="css/dadosEscola.css">
 </head>
 <body>
@@ -19,10 +19,11 @@
 <section class="hero">
   
   <h1>Escola Santos Cosme e Damião</h1>
-  <h3></h3>
+  <h3>  <h3><a href="https://goo.gl/maps/ZBy2XzDoeYgFJ1Mt9">encontrar no mapa</a></h3>
+</h3>
 </section>
 <section class="sobre">
-<h3>Escola Santos Cosme E Damiao</h3>
+<h3>Escola Santos Cosme E Damião</h3>
   <p>Endereço: R. Joaquim Nabuco, 222 - Centro, Igarassu - PE, 53610-070<br>
     E-mail: EESANTOSCOSMEEDAMIAORMN@HOTMAIL.COM<br>
       Alunos matriculados 2019: 1376<br>
@@ -31,25 +32,35 @@
       Código INEP‎: ‎26105519<br>
         Educadores: 72
   <hr>
+
+  
     <ul class="img">
-  <li class="pequena" style="background-image: url('')"><a href=""><p class="obs">Matriculas do 9 ao 3 ano<br>Ensino medio<br>educação jovens e adultos<br>educação especial</p></a></li>    
-  <li class="grande" style="background-image: url('')"><a href=""><p class="obs">RUA JOAQUIN NABUCO 
-    <br>BAIRRO centro<br>CEP:533610070</p></a></li>   
-  <li class="grande" style="background-image: url('')"><a href=""><p class="obs">Melhor localizão da região..</p></a></li>    
-  <li class="pequena" style="background-image: url('')"><a href=""><p class="obs">biblioteca,<br> sala de informatica<br> e de ciencias</p></a></li>    
+  <li class="pequena" style="background-image: url('')"><a href=""><p class="obs">Código INEP 26105519
+Localização da Escola Urbana
+Dependência Estadual
+Endereço  RUA JOAQUIM NABUCO
+Bairro: CENTRO
+CEP: 53610070
+Telefone  (81) 3181-4772
+Fax</p></a></li>    
+  <li class="grande" style="background-image: url('')"><a href=""><p class="obs"></p></a></li>   
+  <li class="grande" style="background-image: url('')"><a href=""><p class="obs"></p></a></li>    
+  <li class="pequena" style="background-image: url('')"><a href=""><p class="obs"></p></a></li>    
+
+
     </ul>
   
 </section>
-	
+
+    
+
+
 <section class="duvidas" >
   <div class="principal">
   	<h2>Dúvidas</h2>
     
     <form>
-     <div class="meio">
-        <input type="text" name=""  required="" placeholder="escola">
-     </div>
-        
+           
      <div class="meio">
         <input type="email" name="" required="" placeholder="email do usuario">
       </div>
@@ -57,10 +68,17 @@
         <textarea placeholder="duvidas.." required=""></textarea>
       </div> 
     
-      <input type="submit" name="" value="enviar">
+      <input type="submit" id="enviarEmail" name="" value="enviar">
     </form>
        
    </div>
+</section>
+
+<section class="galeria">
+  
+<h2 id="subtituloGaleria">Entre e confira a galeria oficial da escola</h2>
+<a href="#" id="entrarGaleria">Entrar</a>
+
 </section>
 </body>
 </html>
