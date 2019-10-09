@@ -43,42 +43,28 @@ Bairro: CENTRO
 CEP: 53610070
 Telefone  (81) 3181-4772
 Fax</p></a></li>    
-  <li class="grande" style="background-image: url('')"><a href=""><p class="obs"></p></a></li>   
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1152.709051240848!2d-34.90894991796831!3d-7.830829417093633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57a6ff7377333d00!2sEscola%20Santos%20Cosme%20E%20Damiao!5e0!3m2!1spt-BR!2sbr!4v1570627721133!5m2!1spt-BR!2sbr" width="1050" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   <li class="grande" style="background-image: url('')"><a href=""><p class="obs"></p></a></li>    
   <li class="pequena" style="background-image: url('')"><a href=""><p class="obs"></p></a></li>    
-
-
     </ul>
-  
 </section>
-
-    
-
-
 <section class="duvidas" >
   <div class="principal">
-  	<h2>Dúvidas</h2>
-    
+  	<h2>Dúvidas</h2>    
     <form>
-           
      <div class="meio">
         <input type="email" name="" required="" placeholder="email do usuario">
       </div>
       <div class="meio">
         <textarea placeholder="duvidas.." required=""></textarea>
       </div> 
-    
       <input type="submit" id="enviarEmail" name="" value="enviar">
     </form>
-       
    </div>
 </section>
-
 <section class="galeria">
-  
 <h2 id="subtituloGaleria">Entre e confira a galeria oficial da escola</h2>
 <a href="#" id="entrarGaleria">Entrar</a>
-
 </section>
 </body>
 </html>
