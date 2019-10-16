@@ -5,10 +5,8 @@
 <title>index</title>
 <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
-<body>
-	
+<body>	
 <header>
-
 	<a href="">SNRC</a>
 	<nav>
 		<li><a href="#">Inicio</a></li>
