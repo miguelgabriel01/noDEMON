@@ -6,7 +6,6 @@
 <link rel="stylesheet" type="text/css" href="css/mapaEscolaSCED.css">
 </head>
 <body>
-	
 <header>
 
 	<a href="">SNRC</a>
