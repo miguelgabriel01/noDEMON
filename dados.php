@@ -5,10 +5,8 @@
 <title>dados</title>
 <link rel="stylesheet" type="text/css" href="css/dados.css">
 </head>
-<body>
-	
+<body>	
 <header>
-
 	<a href="">SNRC</a>
 	<nav>
 		<li><a href="index.php">Inicio</a></li>
