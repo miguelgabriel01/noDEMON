@@ -11,7 +11,7 @@
 	<nav>
 		<li><a href="index.php">Inicio</a></li>
 		<li><a href="sobre.php">Sobre</a></li>
-		<li><a href="#">Mapa</a></li>
+		<li><a href="mapaEscolaSCED.php">Mapa</a></li>
 		<li><a href="escolas.php">Escolas</a></li>
 		<li><a href="cadastroUsuario.php">Cadastro</a></li>
 	</nav>
@@ -19,7 +19,7 @@
 <section class="hero">
   
   <h1>Escola Santos Cosme e Damião</h1>
-  <h3>  <h3><a href="https://goo.gl/maps/ZBy2XzDoeYgFJ1Mt9">encontrar no mapa</a></h3>
+  <h3>  <h3><a href="mapaEscolaSCED.php">encontrar no mapa</a></h3>
 </h3>
 </section>
 <section class="sobre">
@@ -43,9 +43,11 @@ Bairro: CENTRO
 CEP: 53610070
 Telefone  (81) 3181-4772
 Fax</p></a></li>    
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1152.709051240848!2d-34.90894991796831!3d-7.830829417093633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57a6ff7377333d00!2sEscola%20Santos%20Cosme%20E%20Damiao!5e0!3m2!1spt-BR!2sbr!4v1570627721133!5m2!1spt-BR!2sbr" width="1050" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-  <li class="grande" style="background-image: url('')"><a href=""><p class="obs"></p></a></li>    
-  <li class="pequena" style="background-image: url('')"><a href=""><p class="obs"></p></a></li>    
+  <li class="grande" style="background-image: url('')"><a href=""><p class="obs">RUA JOAQUIN NABUCO 
+    <br>BAIRRO centro<br>CEP:533610070</p></a></li>   
+  <li class="grande" style="background-image: url('')"><a href=""><p class="obs">Melhor localizão da região..</p></a></li>    
+  <li class="pequena" style="background-image: url('')"><a href=""><p class="obs">biblioteca,<br> sala de informatica<br> e de ciencias</p></a></li>    
+    </ul>
     </ul>
 </section>
 <section class="duvidas" >
