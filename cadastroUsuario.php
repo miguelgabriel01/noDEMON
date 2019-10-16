@@ -5,8 +5,6 @@
 	<title>formulario</title>
 	<link rel="stylesheet" type="text/css" href="css/cadastroUsuario.css">
 </head>
-
-
 <body>
 <header>
 
