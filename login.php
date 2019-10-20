@@ -43,9 +43,14 @@
 	
 	</form>
 	
+		<a href="addescola.php"  >add</a>
 	</div>
 	
+	
+
+	
 </section>
+
 
 
 </body>
