@@ -26,7 +26,7 @@
 	<input type="text" name="pesquisa" id="pes" placeholder="Encontrar escolas.." >
 	<input type="submit" value="Pesquisar" id="enviar" >
 	</form>
-	
+	<a href="login.php" >Cadastrar escolas</a>
 	
 </section>
 
