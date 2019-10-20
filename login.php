@@ -20,6 +20,31 @@
 
 <section class="imgP">
 	
+	<div class="principal">
+	<h2>Login</h2>
+	
+	<form action="verificar.php" method="post">
+	
+	<div class="meio">
+	<input type="text" name="email" required=" " >
+	<label>Email</label>
+	</div> 
+	
+	
+	<div class="meio">
+	<input type="password" name="senha"  required=" " >
+	<label>Senha</label>
+	</div>    
+	
+	
+	
+	
+	<input type="submit" name="" value="Entrar">
+	
+	</form>
+	
+	</div>
+	
 </section>
 
 
