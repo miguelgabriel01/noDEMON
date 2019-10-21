@@ -23,7 +23,7 @@
 	
 	<h2>Usuário</h2>
     
-    <form action="php/addusuario.php" method="POST">
+    <form action="add.usuario.php" method="POST">
 
         <div class="meio">
           <input type="text" name="nome" required="">
@@ -55,10 +55,7 @@
        <label>Senha</label>
        </div>    
        
-       <div class="meio">
-       <input type="password" name="senhaconfirmada" required="">
-       <label>Confirma senha</label>
-       </div>    
+       
     
         <input type="submit" name="" value="entrar">
      </form>

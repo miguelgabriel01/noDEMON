@@ -1,3 +1,13 @@
+<?php
+session_start();
+$autorizado = $_SESSION['autorizado'] ?? false;
+if ($autorizado !== true) {
+    header('location: index.php');
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -89,6 +99,8 @@
 	
 	</div>
 	
+<a href="sair.php">sair</a>
+
 </section>
 
 
