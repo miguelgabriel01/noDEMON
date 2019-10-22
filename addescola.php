@@ -33,7 +33,7 @@ if ($autorizado !== true) {
 	<div class="principal">
 	<h2>Login</h2>
 	
-	<form action="escolas.php" method="post">
+	<form action="escolass.php" method="post">
 	
 	<div class="meio">
 	<input type="text" name="nome" required=" " >
