@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>login</title>
-<link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>	
 <header>
@@ -35,20 +35,8 @@
 	<input type="password" name="senha"  required=" " >
 	<label>Senha</label>
 	</div>    
-	
-	
-	
-	
 	<input type="submit" name="" value="Entrar">
-	
 	</form>
-	
-		<a href="addescola.php"  >add</a>
-	</div>
-	
-	
-
-	
 </section>
 
 
