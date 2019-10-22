@@ -24,8 +24,6 @@ if ($autorizado !== true) {
 		<li><a href="mapaEscolaSCED.php">Mapa</a></li>
 		<li><a href="escolas.php">Escolas</a></li>
 		<li><a href="cadastroUsuario.php">Cadastro</a></li>
-		<li><a href="sair.php">Sair</a></li>
-
 
 	</nav>
 </header>
@@ -35,11 +33,11 @@ if ($autorizado !== true) {
 	<div class="principal">
 	<h2>Login</h2>
 	
-	<form action="#" method="post">
+	<form action="escolas.php" method="post">
 	
 	<div class="meio">
 	<input type="text" name="nome" required=" " >
-	<label>Nome da escola</label>
+	<label>Nome</label>
 	</div> 
 	
 	<div class="meio">
@@ -79,12 +77,12 @@ if ($autorizado !== true) {
 	
 	<div class="meio">
 	<input type="text" name="diretor" required=" " >
-	<label>Diretor</label>
+	<label>diretor</label>
 	</div> 
 	
 	<div class="meio">
 	<input type="text" name="mapa" required=" " >
-	<label>Link do Google maps</label>
+	<label>link do google maps</label>
 	</div> 
 	
 	<div class="meio">
@@ -101,9 +99,9 @@ if ($autorizado !== true) {
 	
 	</div>
 	
+<a href="sair.php">sair</a>
 
 </section>
-
 
 
 </body>
