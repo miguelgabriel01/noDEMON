@@ -24,6 +24,8 @@ if ($autorizado !== true) {
 		<li><a href="mapaEscolaSCED.php">Mapa</a></li>
 		<li><a href="escolas.php">Escolas</a></li>
 		<li><a href="cadastroUsuario.php">Cadastro</a></li>
+		<li><a href="sair.php">Sair</a></li>
+
 
 	</nav>
 </header>
@@ -99,9 +101,9 @@ if ($autorizado !== true) {
 	
 	</div>
 	
-<a href="sair.php">Sair</a>
 
 </section>
+
 
 
 </body>
