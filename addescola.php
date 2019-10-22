@@ -13,7 +13,7 @@ if ($autorizado !== true) {
 <head>
 <meta charset="UTF-8">
 <title>login</title>
-<link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>	
 <header>
@@ -24,14 +24,15 @@ if ($autorizado !== true) {
 		<li><a href="mapaEscolaSCED.php">Mapa</a></li>
 		<li><a href="escolas.php">Escolas</a></li>
 		<li><a href="cadastroUsuario.php">Cadastro</a></li>
-
+		<li><a href="sair.php">Sair</a>
+</li>
 	</nav>
 </header>
 
 <section class="imgP">
 	
 	<div class="principal">
-	<h2>Login</h2>
+	<h2>Cadastrar Escolas</h2>
 	
 	<form action="escolass.php" method="post">
 	
@@ -42,7 +43,7 @@ if ($autorizado !== true) {
 	
 	<div class="meio">
 	<input type="text" name="endereco" required=" " >
-	<label>Endereço</label>
+	<label>Rua</label>
 	</div> 
 	
 	<div class="meio">
@@ -84,25 +85,16 @@ if ($autorizado !== true) {
 	<input type="text" name="mapa" required=" " >
 	<label>link do google maps</label>
 	</div> 
-	
-	<div class="meio">
-	<input type="password" name="senha"  required=" " >
-	<label>Senha</label>
-	</div>    
-	
-	
-	
-	
 	<input type="submit" name="" value="Entrar">
 	
 	</form>
 	
 	</div>
 	
-<a href="sair.php">sair</a>
 
 </section>
 
 
 </body>
 </html>
+
