@@ -77,12 +77,12 @@ if ($autorizado !== true) {
 	
 	<div class="meio">
 	<input type="text" name="diretor" required=" " >
-	<label>diretor</label>
+	<label>Diretor</label>
 	</div> 
 	
 	<div class="meio">
 	<input type="text" name="mapa" required=" " >
-	<label>link do google maps</label>
+	<label>Link do Google maps</label>
 	</div> 
 	
 	<div class="meio">
@@ -99,7 +99,7 @@ if ($autorizado !== true) {
 	
 	</div>
 	
-<a href="sair.php">sair</a>
+<a href="sair.php">Sair</a>
 
 </section>
 
