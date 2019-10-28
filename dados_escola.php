@@ -1,3 +1,11 @@
+<?php 
+ session_start();
+  $con = new PDO("mysql:host=localhost;dbname=SNRC", "root", "");
+			$escola = $con->prepare("SELECT * FROM escolas");
+			$escola->execute();
+			$exec = $escola->fetchAll(); 
+	
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,23 +22,72 @@
 		<li><a href="mapa_escola.php">Mapa</a></li>
 		<li><a href="escolas.php">Escolas</a></li>
 		<li><a href="cadastro_usuario.php">Cadastro</a></li>
+		<li><a href="cadastro_escola.php">Cad_escola</a></li>
 	</nav>
 </header>
 <section class="hero">
   
-  <h1>Escola Santos Cosme e Damião</h1>
+  <h1><?php  
+	foreach($exec as $exe=> $ex){
+    if($ex['id'] == 1){
+		 echo $ex['nome'] . '<br>';
+		
+    }
+
+	}  ?> </h1>
+  <p>
+  <?php  
+	foreach($exec as $exe=> $ex){
+    if($ex['id'] == 1){
+		 echo $ex['endereco'] . '<br>' . $ex['cidade'] . '<br>' . $ex['cep'] . '<br>' . $ex['telefone'] . '<br>' ;
+    }
+
+
+	}  ?> 
+  </p>
   <h3>  <h3><a href="mapa_escola.php">encontrar no mapa</a></h3>
 </h3>
 </section>
 <section class="sobre">
-<h3>Escola Santos Cosme E Damião</h3>
-  <p>Endereço: R. Joaquim Nabuco, 222 - Centro, Igarassu - PE, 53610-070<br>
-    E-mail: EESANTOSCOSMEEDAMIAORMN@HOTMAIL.COM<br>
-      Alunos matriculados 2019: 1376<br>
-        Localização da Escola: Urbana<br>
-      telefone: (81) 3181-4772<br>
-      Código INEP‎: ‎26105519<br>
-        Educadores: 72
+<h3><?php  
+	foreach($exec as $exe=> $ex){
+    if($ex['id'] == 2){
+		 echo $ex['nome'] . '<br>';
+		
+    }
+
+	}  ?> </h3>
+  <p><?php  
+	foreach($exec as $exe=> $ex){
+    if($ex['id'] == 2){
+		 echo $ex['endereco'] . '<br>' . $ex['cidade'] . '<br>' . $ex['cep'] . '<br>' . $ex['telefone'] . '<br>' ;
+    }
+
+
+	}  ?> 
+  <hr>
+  <h4> <?php  
+	foreach($exec as $exe=> $ex){
+    if($ex['id'] == 3){
+		 echo $ex['nome'] . '<br>';
+		
+    }
+
+	}  ?>
+
+
+  </h4>
+
+  <p> <?php  
+	foreach($exec as $exe=> $ex){
+    if($ex['id'] == 3){
+		 echo $ex['endereco'] . '<br>' . $ex['cidade'] . '<br>' . $ex['cep'] . '<br>' . $ex['telefone'] . '<br>' ;
+    }
+
+
+	}  ?> 
+    
+
   <hr>
 
   

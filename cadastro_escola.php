@@ -1,10 +1,7 @@
 <?php
 session_start();
-$logado = $_SESSION['logado'] ?? false;
-if ($logado !== true) {
-    header('location: index.php');
-    exit();
-}
+$con = new PDO("mysql:host=localhost;dbname=SNRC", "root", "");
+
 ?>
 
 
@@ -45,41 +42,23 @@ if ($logado !== true) {
 	<input type="text" name="endereco" required=" " >
 	<label>Rua</label>
 	</div> 
-	
-	<div class="meio">
-	<input type="text" name="bairro" required=" " >
-	<label>Bairro</label>
-	</div> 
-	
+		
 	<div class="meio">
 	<input type="text" name="cidade" required=" " >
 	<label>Cidade</label>
 	</div> 
-	
-	<div class="meio">
-	<input type="text" name="estado" required=" " >
-	<label>Estado</label>
-	</div> 
-	
+		
 	<div class="meio">
 	<input type="text" name="cep" required=" " >
 	<label>Cep</label>
 	</div> 
 	
-	<div class="meio">
-	<input type="text" name="email" required=" " >
-	<label>Email</label>
-	</div> 
 	
 	<div class="meio">
 	<input type="text" name="telefone" required=" " >
 	<label>Telefone</label>
 	</div> 
 	
-	<div class="meio">
-	<input type="text" name="diretor" required=" " >
-	<label>diretor</label>
-	</div> 
 	
 	<div class="meio">
 	<input type="text" name="mapa" required=" " >
