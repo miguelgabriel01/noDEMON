@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con = new PDO("mysql:host=localhost;dbname=SNRC", "root", "");
+$con = new PDO("mysql:host=localhost;dbname=id10860157_snrc", "id10860157_root", "123456");
 
 ?>
 
