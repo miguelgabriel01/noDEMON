@@ -1,7 +1,7 @@
 <?php
 
-$conn = new PDO("mysql:host=localhost;dbname=SNRC", "root", "");
-				
+$conn = new PDO("mysql:host=localhost;dbname=id10860157_snrc", "id10860157_root", "123456");
+
 	$nome = $_POST["nome"];
 	$email = $_POST["email"];
 	$endereco = $_POST["endereco"];
