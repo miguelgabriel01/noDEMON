@@ -21,7 +21,6 @@ $conn = new PDO("mysql:host=localhost;dbname=id10860157_snrc", "id10860157_root"
 	$consulta->bindValue(":mapa", $mapa);
 	$consulta->execute();
 
-	print_r($_POST);
 	header('location:dados_escola.php?msg=escola cadastrada com sucesso!');
 
 	?>
