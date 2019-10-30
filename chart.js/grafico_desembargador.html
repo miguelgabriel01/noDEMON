@@ -7,14 +7,29 @@
       <title>Gráficos de Escolas</title>
 
       <body>
-         <canvas class="line-chart"></canvas>
+         <canvas class="line-chart" style="display:block; width:849px; height:642;"></canvas>
          <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
          <script>
             var ctx = document.getElementsByClassName("line-chart");
             
-           
-         </script>   
-         
+            var chartGraph = new Chart(ctx, {
+                  type: 'line',
+                  data: {
+                     labels:[,"2015","2016","2017","2018"],
+                     
+                     datasets: [{
+                        label:'Média no Enem Escola Desembargador paes barreto',
+                        data: [430, 0,470,431,468],
+                        borderwidth: 2,
+                        borderColor: 'rgba(77,166,253)'
+
+                     }]
+                  },
+            });   
+         </script>           
+
+
 
 
       </body>
