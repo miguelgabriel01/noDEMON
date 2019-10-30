@@ -20,7 +20,6 @@ $conn = new PDO("mysql:host=localhost;dbname=id10860157_snrc", "id10860157_root"
 	$consulta->bindValue(":estado", $estado);
 	$consulta->bindValue(":senha", $senha);
 	$consulta->execute();
-    print_r($_POST);
 
     header('location:index.php?msg=usuario cadastrado com sucesso!');
 	?>
