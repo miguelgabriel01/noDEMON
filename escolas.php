@@ -1,3 +1,13 @@
+<?php 
+ session_start();
+  $con = new PDO("mysql:host=localhost;dbname=id10860157_snrc", "id10860157_root", "123456");
+			$escola = $con->prepare("SELECT * FROM escolas");
+			$escola->execute();
+			$exec = $escola->fetchAll(); 
+	
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,98 +28,59 @@
 
 	</nav>
 </header>
+<section class="dados">
+ <h1><?php  
+	foreach($exec as $exe=> $ex){
+    if($ex['id'] == 1){
+		 echo $ex['nome'] . '<br>';
+		
+    }
 
-<section class="hero">
-	<h1>Escolas</h1>
-	<h3></h3>
+	}  ?> </h1>
+  <p>
+  <?php  
+	foreach($exec as $exe=> $ex){
+    if($ex['id'] == 1){
+		 echo $ex['endereco'] . '<br>' . $ex['cidade'] . '<br>' . $ex['cep'] . '<br>' . $ex['telefone'] . '<br>' ;
+    }
 
- <form method="" action="#">
-	<input type="text" name="pesquisa" id="pes" placeholder="Encontrar escola.." >
-	<input type="submit" value="Pesquisar" id="enviar" >
- </form>
 
+	}  ?> 
+  </p>
+  <h3>  
+</h3>
 </section>
 
-<section class="escola">
-	<h3>Escola Santos Cosme e Damiao</h3>
-	<p>Endereço: R. Joaquim Nabuco, 222 - Centro, Igarassu - PE, 53610-070<br>
-		E-mail: EESANTOSCOSMEEDAMIAORMN@HOTMAIL.COM<br>
-    	Alunos matriculados 2019: 1376<br>
-        Localização da Escola: Urbana<br>
-	    telefone: (81) 3181-4772<br>
-	    Código INEP‎: ‎26105519<br>
-        Educadores: 72
-	</p>
-	<hr>
+<h3><?php  
+	foreach($exec as $exe=> $ex){
+    if($ex['id'] == 2){
+		 echo $ex['nome'] . '<br>';
+    }
+	}  ?> </h3>
+  <p><?php  
+	foreach($exec as $exe=> $ex){
+    if($ex['id'] == 2){
+		 echo $ex['endereco'] . '<br>' . $ex['cidade'] . '<br>' . $ex['cep'] . '<br>' . $ex['telefone'] . '<br>' ;
+    }
+	}  ?> 
+  <hr>
+  <h4> <?php  
+	foreach($exec as $exe=> $ex){
+    if($ex['id'] == 3){
+		 echo $ex['nome'] . '<br>';
+    }
 
-	  <ul class="img">
-	<a href=""><li class="pequena" style="background-image: url('img/scfrente2.jpg')"><a href=""><p class="obs"></p></a></li></a>  	
-	<a href=""><li class="grande" style="background-image: url('img/scfrente.jpg')"><a href=""><p class="obs"></p></a></li></a>  	
-	
+	}  ?>
 
-	  </ul>
-	
-<a href="dados_escola.php" id="aescola">saber mais..</a>
+  </h4>
+  <p> <?php  
+	foreach($exec as $exe=> $ex){
+    if($ex['id'] == 3){
+		 echo $ex['endereco'] . '<br>' . $ex['cidade'] . '<br>' . $ex['cep'] . '<br>' . $ex['telefone'] . '<br>' ;
+    }
+
+	}  ?> 
 </section>
-
-<section class="escola">
-	<h3>Escola Desembargador Carlos Xavier Paes Barretto</h3>
-	<p>Endereço: R. Carlos Paes Barreto, s/n - Loteamento Redenção, Igarassu - PE, 53610-430<br>
-	ensino fundamental<br>
-	Telefone: (81) 3543-3079<br>
-	carloschavier@gmail.com<br>
-    Código INEP	32040717</p>
-	<hr>
-
-	  <ul class="img">
-	<a href=""><li class="pequena" style="background-image: url('img/cxfrente.jpeg')"><a href=""><p class="obs"></p></a></li></a>  	
-	<a href=""><li class="grande" style="background-image: url('img/cxfrente.jpeg')"><a href=""><p class="obs"></p></a></li></a>  	
-	
-
-	  </ul>
-	
-<a href="#" id="aescola">saber mais..</a>
-
-</section>
-
-<section class="escola">
-	<h3>EREM João pessoas guerra</h3>
-	<p>AV DR ALFREDO BANDEIRA DE MELO<br>
-	ensino médio<br>
-	Fone: (081) 3543-1404<br>
-	jacksonildefonso@yahoo.com.br<br>
-	Bairro: CENTRO<br>
-    Código INEP	26105314</p>
-	<hr>
-
-	  <ul class="img">
-	<a href=""><li class="pequena" style="background-image: url('img/jpgfrente.jpeg')"><a href=""><p class="obs"></p></a></li></a>  	
-	<a href=""><li class="grande" style="background-image: url('img/jpgmapa.jpeg')"><a href=""><p class="obs"></p></a></li></a>  	
-	
-
-	  </ul>
-	
-<a href="#" id="aescola">saber mais..</a>
-
-</section>
-
-<section class="escola">
-	<h3></h3>
-	<p></p>
-	<hr>
-
-	  <ul class="img">
-	<a href=""><li class="pequena" style="background-image: url('')"><a href=""><p class="obs">Encontre as melhores escolas para o seu filho..</p></a></li></a>  	
-	<a href=""><li class="grande" style="background-image: url('')"><a href=""><p class="obs">Com a Melhor infraestrutura..</p></a></li><  	
-	
-
-	  </ul>
-	
-<a href="#" id="aescola">saber mais..</a>
-
-</section>
-
-<section class="fim"></section>
 
 </body>
 </html>
