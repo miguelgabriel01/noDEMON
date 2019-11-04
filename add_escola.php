@@ -1,6 +1,6 @@
 <?php
 
-$conn = new PDO("mysql:host=localhost;dbname=id10860157_snrc", "id10860157_root", "123456");
+$conn = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
 				
 	$nome = $_POST["nome"];
 	$endereco = $_POST["endereco"];
@@ -21,6 +21,7 @@ $conn = new PDO("mysql:host=localhost;dbname=id10860157_snrc", "id10860157_root"
 	$consulta->bindValue(":mapa", $mapa);
 	$consulta->execute();
 
-	header('location:dados_escola.php?msg=escola cadastrada com sucesso!');
+
+	header('location:index.php?msg=escola cadastrada com sucesso!');
 
 	?>

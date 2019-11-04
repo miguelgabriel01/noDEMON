@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con = new PDO("mysql:host=localhost;dbname=id10860157_snrc", "id10860157_root", "123456");
+$con = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
 
 ?>
 
@@ -16,13 +16,12 @@ $con = new PDO("mysql:host=localhost;dbname=id10860157_snrc", "id10860157_root",
 <header>
 	<a href="">SNRC</a>
 	<nav>
+
 		<li><a href="index.php">Inicio</a></li>
-		<li><a href="sobre.php">Sobre</a></li>
-		<li><a href="mapa_escola.php">Mapa</a></li>
-		<li><a href="escolas.php">Escolas</a></li>
+		<li><a href="login.php" >Cadastrar Escolas</a></li>
 		<li><a href="cadastro_usuario.php">Cadastro</a></li>
-		<li><a href="sair.php">Sair</a>
-</li>
+		<li><a href="mapa_escola.php">Mapa</a></li>
+		<li><a href="sobre.php">Sobre</a></li></li>
 	</nav>
 </header>
 

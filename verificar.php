@@ -1,7 +1,7 @@
 
 <?php
 	session_start();
-	$conn = new PDO("mysql:host=localhost;dbname=id10860157_snrc", "id10860157_root", "123456");
+	$conn = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
 
 	$email = $_POST["email"];
 	$senha = $_POST["senha"];
@@ -14,10 +14,11 @@
 
 	if ($consulta->rowCount() > 0 ) {
 		session_start();
-		$_SESSION["logado"] = $consulta->fetchAll()[0]["id"];
+		$_SESSION["logado"] = $consulta->fetch();
+		//print_r($consulta->fetch());
+		
 		header("Location: /cadastro_escola.php?msg=usuario logado com sucesso!");
-		echo "Conectado";
-		$_SESSION['logado'] = true;
+		
 	} 
 
 ?>
