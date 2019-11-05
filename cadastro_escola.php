@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["logado"]) ){
-header("location:index.php");
+header("location:index.php?msg=Você precisa está logado.");
 }
 ?>
 

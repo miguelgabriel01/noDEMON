@@ -21,5 +21,5 @@ $conn = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
 	$consulta->bindValue(":senha", $senha);
 	$consulta->execute();
 
-    header('location:index.php?msg=usuario cadastrado com sucesso!');
+    header('location:index.php?msg=Usuário cadastrado com sucesso!');
 	?>

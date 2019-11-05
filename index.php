@@ -34,6 +34,11 @@ $conn = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
 	<h1>Bem vindo ao SNRC</h1>
 	<h3>Encontre o melhor centro de ensino na sua região..</h3>
 
+	<?php if(isset($_GET['msg'])) :?>
+		<h1><?= $_GET['msg'] ?> </h1>
+
+	<?php endif ?>
+
 
 
 	<form method="get" action="dados_escola.php">

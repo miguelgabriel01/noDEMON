@@ -22,6 +22,6 @@ $conn = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
 	$consulta->execute();
 
 
-	header('location:index.php?msg=escola cadastrada com sucesso!');
+	header('location:index.php?msg=Escola cadastrada com sucesso!');
 
 	?>
