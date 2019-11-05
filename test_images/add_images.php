@@ -1,5 +1,7 @@
 <?php
-$con = new PDO("mysql:host=localhost", dbname=SNRC", "root" "");
+$con = new PDO("mysql:host=localhost", dbname=IBAGENS", "root" "tt018");
+
+
 
 
 
