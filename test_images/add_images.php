@@ -11,6 +11,7 @@ $con = new PDO("mysql:host=localhost", dbname=IBAGENS", "root" "tt018");
       $consulta->bindValue(":url", $url);
       $consulta->bindValue(":extensao", $extensao);
       $consulta->bindValue(":local", $local);
+      $consulta->bindValue(":ano", $ano);
       
       
 
