@@ -7,8 +7,7 @@ $con = new PDO("mysql:host=localhost", dbname=IBAGENS", "root" "tt018");
       $ano = $_POST["ano"];
       
       
-      $consulta = 
-      
+      $consulta = $conn->prepare
 
 
 
