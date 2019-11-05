@@ -1,8 +1,10 @@
 <?php
 session_start();
-$con = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
-
+if(!isset($_SESSION["logado"]) ){
+header("location:index.php");
+}
 ?>
+
 
 
 <!DOCTYPE html>
@@ -16,12 +18,14 @@ $con = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
 <header>
 	<a href="">SNRC</a>
 	<nav>
+	
 
 		<li><a href="index.php">Inicio</a></li>
 		<li><a href="login.php" >Cadastrar Escolas</a></li>
 		<li><a href="cadastro_usuario.php">Cadastro</a></li>
 		<li><a href="mapa_escola.php">Mapa</a></li>
 		<li><a href="sobre.php">Sobre</a></li></li>
+		<li><a href="sair.php">Sair</a></li></li>
 	</nav>
 </header>
 

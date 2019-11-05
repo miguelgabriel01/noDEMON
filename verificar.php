@@ -17,8 +17,10 @@
 		$_SESSION["logado"] = $consulta->fetch();
 		//print_r($consulta->fetch());
 		
-		header("Location: /cadastro_escola.php?msg=usuario logado com sucesso!");
+		header("Location: /index.php?msg=usuario logado com sucesso!");
 		
-	} 
+	}else{
+		header('location: /login.php?msg=Usuário não existe');
+	}
 
 ?>

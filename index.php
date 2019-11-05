@@ -19,17 +19,23 @@ $conn = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
 	<a href="">SNRC</a>
 	<nav>
 		<li><a href="index.php">Inicio</a></li>
-		<li><a href="login.php" >Cadastrar Escolas</a></li>
+		<li><a href="login.php" >Login</a></li>
 		<li><a href="cadastro_usuario.php">Cadastro</a></li>
 		<li><a href="sobre.php">Sobre</a></li></li>
+		<li><a href="cadastro_escola.php">Cadastrar Escola</a></li>
+		<li><a href="sair.php">Sair</a></li></li>
 
 	</nav>
 </header>
 
 <section class="imgP">
+
+
 	<h1>Bem vindo ao SNRC</h1>
 	<h3>Encontre o melhor centro de ensino na sua região..</h3>
-	
+
+
+
 	<form method="get" action="dados_escola.php">
 	<select name="xpto">
 							<?php

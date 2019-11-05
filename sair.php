@@ -1,6 +1,6 @@
 <?php
 session_start();
-// session_destroy();
+session_destroy();
 unset($_SESSION['logado']);
-header('location: index.php');
+header('location: index.php?msg=usuario deslogado');
 ?>

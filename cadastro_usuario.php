@@ -12,7 +12,7 @@
 	<nav>
 
     <li><a href="index.php">Inicio</a></li>
-    <li><a href="login.php" >Cadastrar Escolas</a></li>
+    <li><a href="login.php" >Login</a></li>
     <li><a href="cadastro_usuario.php">Cadastro</a></li>
     <li><a href="sobre.php">Sobre</a></li></li>
 	</nav>

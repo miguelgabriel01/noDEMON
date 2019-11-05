@@ -37,6 +37,7 @@ create database if not exists SNRC;
 			id INT AUTO_INCREMENT PRIMARY KEY,
 			comment VARCHAR(400) NOT NULL,
 			id_usuario INT NOT NULL,
+			nome VARCHAR(50) not null,
 			FOREIGN KEY(id_usuario) REFERENCES usuario(id),
 			id_escolas INT not null,
 			FOREIGN KEY(id_escolas) REFERENCES escolas(id)
