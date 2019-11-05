@@ -6,6 +6,9 @@ $con = new PDO("mysql:host=localhost", dbname=IBAGENS", "root" "tt018");
       $local = $_POST["local"];
       $ano = $_POST["ano"];
       
+      
+      $consulta = 
+      
 
 
 
