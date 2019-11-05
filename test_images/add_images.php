@@ -1,5 +1,7 @@
 <?php
-$con =
+$con = new PDO("mysql:host=*", "*", "*");
+
+
 
 
 
