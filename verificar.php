@@ -1,7 +1,7 @@
 
 <?php
 	session_start();
-	$conn = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
+	include "conexao.php";
 
 	$email = $_POST["email"];
 	$senha = $_POST["senha"];
@@ -22,5 +22,4 @@
 	}else{
 		header('location: /login.php?msg=Login ou Senha inválidos.');
 	}
-
 ?>

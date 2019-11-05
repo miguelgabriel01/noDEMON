@@ -1,5 +1,5 @@
 <?php
-$conn = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
+  include "conexao.php";
 	
 	$id = $_POST["id"];
 	$comment = $_POST["comment"];

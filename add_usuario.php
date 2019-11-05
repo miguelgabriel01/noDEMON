@@ -1,6 +1,6 @@
 <?php
 
-$conn = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
+include "conexao.php";
 
 	$nome = $_POST["nome"];
 	$email = $_POST["email"];

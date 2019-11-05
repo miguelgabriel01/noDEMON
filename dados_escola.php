@@ -4,14 +4,14 @@
 
 
     $id = $_GET['xpto'];
-    $con = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
-			$escola = $con->prepare("SELECT * FROM escolas WHERE id = :id ");
+    include "conexao.php";
+    $escola = $conn->prepare("SELECT * FROM escolas WHERE id = :id ");
       $escola->bindValue(":id", $id);
       $escola->execute(); 
 
 
 
-      $comentario = $con->prepare("SELECT * FROM comments WHERE id_escolas = :id;");
+      $comentario = $conn->prepare("SELECT * FROM comments WHERE id_escolas = :id;");
       $comentario->bindValue(':id', $id);
       $comentario->execute(); 
 

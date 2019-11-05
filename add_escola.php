@@ -1,7 +1,7 @@
 <?php
 
-$conn = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
-				
+  include "conexao.php";
+  				
 	$nome = $_POST["nome"];
 	$endereco = $_POST["endereco"];
 	$cidade = $_POST["cidade"];

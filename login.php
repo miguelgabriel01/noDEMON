@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con = new PDO("mysql:host=localhost;dbname=SNRC", "root", "ifpe");
+include "conexao.php";
 
 ?>
 <!DOCTYPE html>
