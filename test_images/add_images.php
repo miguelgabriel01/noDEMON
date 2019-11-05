@@ -13,5 +13,5 @@ $con = new PDO("mysql:host=localhost", dbname=IBAGENS", "root" "tt018");
       $consulta->bindValue(":local", $local);
       $consulta->bindValue(":ano", $ano);
       $consulta->execute();
-  header('location:add_imagens.php?msg= imagem enviada com sucesso!');
+       header('location:add_imagens.php?msg= imagem enviada com sucesso!');
  ?>
