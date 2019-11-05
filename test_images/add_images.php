@@ -1,5 +1,5 @@
 <?php
-$con = new PDO("mysql:host=localhost", "*", "*");
+$con = new PDO("mysql:host=localhost", dbname=SNRC", "*");
 
 
 
