@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "conexao.php";
+include "config/conexao.php";
 
 ?>
 <!DOCTYPE html>

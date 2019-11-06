@@ -1,12 +1,10 @@
 <?php
 session_start();
-include "conexao.php";
-				
+include "config/conexao.php";
+$query = $conn->prepare("SELECT * FROM escolas");
+$query->execute();
 
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -43,15 +41,9 @@ include "conexao.php";
 
 	<form method="get" action="dados_escola.php">
 	<select name="xpto">
-							<?php
-						   $query = $conn->prepare("SELECT * FROM escolas");
-						   $query->execute();
-			
-							?>    
-						<?php foreach($query->fetchAll() as $data) : ?>
-
-						       <option  name="id" value="<?= $data["id"] ?>"><?= $data["nome"] ?></option>    
-						  <?php endforeach ?>
+						<?php foreach($query->fetchAll() as $data) : ?>	
+					       <option  name="id" value="<?= $data["id"] ?>"><?= $data["nome"] ?></option>    
+						<?php endforeach ?>
 	
 				
 	</select>

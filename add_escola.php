@@ -1,6 +1,6 @@
 <?php
 
-  include "conexao.php";
+  include "config/conexao.php";
   				
 	$nome = $_POST["nome"];
 	$endereco = $_POST["endereco"];

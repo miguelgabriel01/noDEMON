@@ -1,5 +1,5 @@
 <?php
-  include "conexao.php";
+  include "config/conexao.php";
 	
 	$id = $_POST["id"];
 	$comment = $_POST["comment"];

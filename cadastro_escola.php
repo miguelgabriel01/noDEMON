@@ -18,8 +18,6 @@ header("location:index.php?msg=Você precisa está logado.");
 <header>
 	<a href="">SNRC</a>
 	<nav>
-	
-
 		<li><a href="index.php">Inicio</a></li>
 		<li><a href="login.php" >Cadastrar Escolas</a></li>
 		<li><a href="cadastro_usuario.php">Cadastro</a></li>

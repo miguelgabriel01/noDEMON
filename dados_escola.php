@@ -4,7 +4,7 @@
 
 
     $id = $_GET['xpto'];
-    include "conexao.php";
+    include "config/conexao.php";
     $escola = $conn->prepare("SELECT * FROM escolas WHERE id = :id ");
       $escola->bindValue(":id", $id);
       $escola->execute(); 
@@ -50,13 +50,13 @@
    <?php foreach($escola->fetchAll() as $data) : ?>
                               <th>Informações Escolares</th>
                    <tr  name="id" value="<?= $data["id"] ?>"><td>Escola:  <?= $data["nome"] ?> </td>
-                        <tr> <td>Endereço:      <?= $data["endereco"] ?> </td></tr>
-                        <tr> <td>Cidade:      <?= $data["cidade"] ?> </td>
-                        <tr> <td>Cep:      <?= $data["cep"] ?> </td>
-                        <tr> <td>Telefone:       <?= $data["telefone"] ?> </td>
-                       <tr> <td>Mapa: <iframe src="<?= $data["mapa"] ?>" width="" height="" frameborder="0" style="border:0;" allowfullscreen="">      </iframe></td> 
+                   <tr> <td>Endereço:      <?= $data["endereco"] ?> </td></tr>
+                   <tr> <td>Cidade:      <?= $data["cidade"] ?> </td>
+                   <tr> <td>Cep:      <?= $data["cep"] ?> </td>
+                   <tr> <td>Telefone:       <?= $data["telefone"] ?> </td>
+                   <tr> <td>Mapa: <iframe src="<?= $data["mapa"] ?>" width="" height="" frameborder="0" style="border:0;" allowfullscreen="">      </iframe></td> 
 
-              <?php endforeach ?>
+    <?php endforeach ?>
 
  </table>
 </section>
