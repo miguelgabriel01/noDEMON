@@ -328,3 +328,19 @@ textarea{
 	font-size: 30px;
     margin-top: 30px;
 }
+
+
+
+ tr, td,th {
+		border: 2px solid black;
+		 padding: 1px;
+		 width: 300px;
+		 text-align: center;
+
+
+	}
+	
+.table{
+	border-collapse: collapse;
+}
+
