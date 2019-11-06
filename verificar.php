@@ -4,7 +4,7 @@
 	include "conexao.php";
 
 	$email = $_POST["email"];
-	$senha = $_POST["senha"];
+	$senha = md5($_POST["senha"]);
 
 	$consulta = $conn->prepare("SELECT * FROM usuario WHERE email = ? and senha = ?");
 	$consulta->bindValue(1, $email);

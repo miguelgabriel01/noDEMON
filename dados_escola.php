@@ -19,7 +19,12 @@
       // var_dump($id);
       // var_dump($c);
       // exit();
+
+
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,19 +46,19 @@
     	</nav>
 </header>
 <section class="hero"> 
- <h1>
+ <table class='table'>
    <?php foreach($escola->fetchAll() as $data) : ?>
-
-                   <h1  name="id" value="<?= $data["id"] ?>"><?= $data["nome"] ?></h1>
-                        <p>Endereço:      <?= $data["endereco"] ?> </p>
-                        <p>Cidade:      <?= $data["cidade"] ?> </p>
-                        <p>Cep:      <?= $data["cep"] ?> </p>
-                        <p>Telefone:       <?= $data["telefone"] ?> </p>
-                        <p>Mapa: <iframe src="<?= $data["mapa"] ?>" width="" height="" frameborder="0" style="border:0;" allowfullscreen="">      </iframe></p>
+                              <th>Informações Escolares</th>
+                   <tr  name="id" value="<?= $data["id"] ?>"><td>Escola:  <?= $data["nome"] ?> </td>
+                        <tr> <td>Endereço:      <?= $data["endereco"] ?> </td></tr>
+                        <tr> <td>Cidade:      <?= $data["cidade"] ?> </td>
+                        <tr> <td>Cep:      <?= $data["cep"] ?> </td>
+                        <tr> <td>Telefone:       <?= $data["telefone"] ?> </td>
+                       <tr> <td>Mapa: <iframe src="<?= $data["mapa"] ?>" width="" height="" frameborder="0" style="border:0;" allowfullscreen="">      </iframe></td> 
 
               <?php endforeach ?>
 
- </h1>
+ </table>
 </section>
 <section class="duvidas" >
   <div class="principal">

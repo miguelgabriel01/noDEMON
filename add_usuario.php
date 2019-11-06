@@ -7,7 +7,7 @@ include "conexao.php";
 	$endereco = $_POST["endereco"];
 	$cidade = $_POST["cidade"];
 	$estado = $_POST["estado"];
-	$senha = $_POST["senha"];
+	$senha = md5($_POST["senha"]);
 
 
  	

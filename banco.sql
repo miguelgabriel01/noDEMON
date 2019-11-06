@@ -30,7 +30,7 @@ create database if not exists SNRC;
 			hist VARCHAR(40) NOT NULL,
 			
 			id_escolas INT NOT NULL,
-		  FOREIGN KEY(id_escolas) REFERENCES escolas(id)
+		    FOREIGN KEY(id_escolas) REFERENCES escolas(id)
 			
 	);
 	CREATE TABLE comments(
