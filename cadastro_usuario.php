@@ -21,7 +21,7 @@
 	
 	<h2>Usuário</h2>
     
-    <form action="add_usuario.php" method="POST">
+    <form action="../controller/cadastrar.php" method="POST">
 
         <div class="meio">
           <input type="text" name="nome" required="">
