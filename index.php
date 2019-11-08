@@ -1,10 +1,10 @@
 <?php
 session_start();
 include "config/conexao.php";
-$query = $conn->prepare("SELECT * FROM escolas");
-$query->execute();
-
+include "model/Escolas.php";
+	$escola = new Escolas();
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -41,9 +41,11 @@ $query->execute();
 
 	<form method="get" action="dados_escola.php">
 	<select name="xpto">
-						<?php foreach($query->fetchAll() as $data) : ?>	
-					       <option  name="id" value="<?= $data["id"] ?>"><?= $data["nome"] ?></option>    
-						<?php endforeach ?>
+							
+						<?php foreach($escola->link() as $data) : ?>
+
+						       <option  name="id" value="<?= $data["id"] ?>"><?= $data["nome"] ?></option>    
+						  <?php endforeach ?>
 	
 				
 	</select>

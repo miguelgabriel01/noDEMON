@@ -13,9 +13,6 @@ if(!empty($email) && !empty($senha)){
 	header("Location: ../index.php?msg=Usuário logado com sucesso!");	
 	} else{
 	header('location: ../login.php?msg=Login ou Senha inválidos.');
-
 	}
 }
-
-
 ?>

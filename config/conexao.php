@@ -1,11 +1,11 @@
 <?php
-try{
-    $conn = new PDO("mysql:host=localhost;dbname=SNRC", "root", ""); 
-}
-catch(PDOException $e){
-    echo "Erro do Banco de dados: " . $e->getMessage();
-}
-catch(Exception $e){
-    echo "Erro de aplicacao: " . $e->getMessage();
-}
-?>
+  abstract class Connection {
+    private static $conn;
+    public static function getConn() {
+      if (self::$conn == null) {
+          self::$conn = new PDO("mysql:host=localhost;dbname=SNRC", "lucas", "");
+      }
+      return self::$conn;
+    }
+  }
+  ?>

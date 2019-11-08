@@ -15,7 +15,7 @@ class Usuario{
 			$consulta->bindValue(":estado", $estado);
 			$consulta->bindValue(":senha", $senha);
 			$consulta->execute();
-			}
+	}
  	
  	public function login($email, $senha) {
  		$con = Connection::getConn();
@@ -31,11 +31,6 @@ class Usuario{
 	 	return true;
 	 	}
 	 	return false;
-
-
-
-
+	}
 }
-
-
 ?>

@@ -1,107 +1,121 @@
-<?php 
+<?php
   session_start();
 
 
 
     $id = $_GET['xpto'];
     include "config/conexao.php";
-    $escola = $conn->prepare("SELECT * FROM escolas WHERE id = :id ");
-      $escola->bindValue(":id", $id);
-      $escola->execute(); 
+    include "model/Escolas.php";
+    include "model/Comments.php";
+
+    $comment = new Comments();
+    $id = $_GET["xpto"];
+    print_r($_SESSION["logado"]["nome"]);
+  //  $comentario = new Comments();
+     $escola = new Escolas();
 
 
+      // $comentario = $conn->prepare("SELECT * FROM comments WHERE id_escolas = :id;");
+      // $comentario->bindValue(':id', $id);
+      // $comentario->execute();
 
-      $comentario = $conn->prepare("SELECT * FROM comments WHERE id_escolas = :id;");
-      $comentario->bindValue(':id', $id);
-      $comentario->execute(); 
-
-      $c = $comentario->fetchAll();
+      // $c = $comentario->fetchAll();
       // var_dump($id);
       // var_dump($c);
       // exit();
 
-
-
-?>
-
-
+      ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>DadosEscola</title>
-	<link rel="stylesheet" type="text/css" href="css/dados_escola.css">
+  <meta charset="UTF-8">
+  <title>DadosEscola</title>
+  <link rel="stylesheet" type="text/css" href="css/dados_escola.css">
 </head>
+
 <body>
-<header>
-	<a href="">SNRC</a>
-	<nav>
+  <header>
+    <a href="">SNRC</a>
+    <nav>
 
-    <li><a href="index.php">Inicio</a></li>
-    <li><a href="login.php" >Login</a></li>
-    <li><a href="cadastro_usuario.php">Cadastro</a></li>
-    <li><a href="sobre.php">Sobre</a></li></li>
-    <li><a href="sair.php">Sair</a></li></li>
-    	</nav>
-</header>
-<section class="hero"> 
- <table class='table'>
-   <?php foreach($escola->fetchAll() as $data) : ?>
-                              <th>Informações Escolares</th>
-                   <tr  name="id" value="<?= $data["id"] ?>"><td>Escola:  <?= $data["nome"] ?> </td>
-                   <tr> <td>Endereço:      <?= $data["endereco"] ?> </td></tr>
-                   <tr> <td>Cidade:      <?= $data["cidade"] ?> </td>
-                   <tr> <td>Cep:      <?= $data["cep"] ?> </td>
-                   <tr> <td>Telefone:       <?= $data["telefone"] ?> </td>
-                   <tr> <td>Mapa: <iframe src="<?= $data["mapa"] ?>" width="" height="" frameborder="0" style="border:0;" allowfullscreen="">      </iframe></td> 
+      <li><a href="index.php">Inicio</a></li>
+      <li><a href="login.php">Login</a></li>
+      <li><a href="cadastro_usuario.php">Cadastro</a></li>
+      <li><a href="sobre.php">Sobre</a></li>
+      </li>
+      <li><a href="sair.php">Sair</a></li>
+      </li>
+    </nav>
+  </header>
+  <section class="hero">
+    <table class='table'>
+      <?php foreach($escola->get($id) as $data) : ?>
+      <th>Informações Escolares</th>
+      <tr name="id" value="<?= $data["id"] ?>">
+        <td>Escola: <?= $data["nome"] ?> </td>
+      <tr>
+        <td>Endereço: <?= $data["endereco"] ?> </td>
+      </tr>
+      <tr>
+        <td>Cidade: <?= $data["cidade"] ?> </td>
+      <tr>
+        <td>Cep: <?= $data["cep"] ?> </td>
+      <tr>
+        <td>Telefone: <?= $data["telefone"] ?> </td>
+      <tr>
+        <td>Mapa: <iframe src="<?= $data["mapa"] ?>" width="" height="" frameborder="0" style="border:0;"
+            allowfullscreen=""> </iframe></td>
 
-    <?php endforeach ?>
+        <?php endforeach ?>
 
- </table>
-</section>
-<section class="duvidas" >
-  <div class="principal">
-  	<h2>Dúvidas</h2>    
-    <form method="POST" action="comment.php">
-     <div class="meio">
-        <input type="hidden" name="email" required="" value="<?= $_SESSION["logado"]["email"] ?>">
-        <input type="hidden" name="id" required="" value="<?= $_SESSION["logado"]["id"] ?>">
-        <input type="hidden" name="nome" required="" value="<?= $_SESSION["logado"]["nome"] ?>">
-        <input type="hidden" name="id_escola" required="" value="<?= $id ?>">
-      </div>
-      <div class="meio">
+    </table>
+  </section>
+  <section class="duvidas">
+    <div class="principal">
+      <h2>Dúvidas</h2>
+      <form method="POST" action="../controller/cadastrar_comentario.php">
+        <div class="meio">
+          <input type="hidden" name="id" required="" value="<?= $_SESSION["logado"]["id"] ?>">
+          <input type="hidden" name="nome" required="" value="<?= $_SESSION["logado"]["nome"] ?>">
+          <input type="hidden" name="id_escola" required="" value="<?= $id ?>">
+        </div>
+        <div class="meio">
 
 
-      <?php 
+          <?php
         if(!isset($_SESSION['logado'])) :?>
 
 
-        <h1>Você precisa está logado para comentar.</h1>
+          <h1>Você precisa está logado para comentar.</h1>
 
 
-        <?php endif ?>
-      
+          <?php endif ?>
 
 
-        
 
+
+
+        </div>
         <textarea placeholder="duvidas.." name="comment" required=""></textarea>
-      </div> 
-      <input type="submit" id="enviarEmail" name="" value="enviar">
-    </form>
-   </div>
-</section>
-<section class="galeria">
-  <ul>
-  <?php foreach($c as $comm) : ?>
-    <h1 class="nome"> <?= $comm["nome"] ?></h1>
-             <li name="id" value="<?= $comm["id"] ?>"> <?= $comm["comment"] ?>  </li>   
-           <?php endforeach ?>
-        
+        <input type="submit" id="enviarEmail" name="" value="enviar">
+      </form>
+    </div>
+  </section>
+  <section class="galeria">
+    <?php foreach($comment->Link($id) as $dados) : ?>
+      <ul>
+        <li>
+          <h1><?= $dados["nome"] ?></h1>
+          <p>
+            <?= $dados["comment"] ?>
+          </p>
+        </li>
 
-      </li>
-  </ul>
-</section>
+      </ul>
+    <?php endforeach ?>
+  </section>
 </body>
+
 </html>

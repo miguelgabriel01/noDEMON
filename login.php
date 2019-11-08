@@ -43,7 +43,7 @@ include "config/conexao.php";
 
 	<h2>Login</h2>
 	
-	<form action="verificar.php" method="post">
+	<form action="controller/login.php" method="post">
 	
 	<div class="meio">
 	<input type="text" name="email" required=" " >
