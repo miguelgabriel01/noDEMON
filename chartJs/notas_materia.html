@@ -1,0 +1,30 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible"  content="ie-edge">
+      <meta name="viewport" content="width= device-width, initial-scale=1.0">
+
+      <title>Gráficos de Escolas</title>
+   </head>
+   <body>
+      <div style="width: 500px; height: 500px;">
+         <canvas class="radar-chart" width="2" height="2"></canvas>
+         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+         <script>
+            var ctx = document.getElementsByClassName("radar-chart");
+            var chartGraph = new Chart(ctx, {
+               type: 'pie',
+               data: {
+                     labels:["Português","Redação","Humanas","Matemática","Exatas"],
+                     datasets: [{
+                        label:'Notas das matérias da escola no ultimo ENEM',
+                        data: [750,640,745,540,400],
+                        //borderColor:['green','pink','red','purple','yellow'],
+                        backgroundColor:['rgb(255, 255, 77)','rgb(77, 255, 77)','rgb(255, 51, 51)','rgb(255, 102, 217)','rgb(51, 102, 255)'],
+                        }]
+                     },
+                  });
+            </script>           
+         </div>
+      </body>
+</html>
