@@ -98,7 +98,7 @@
 
 
         </div>
-        <textarea placeholder="duvidas.." name="comment" required=""></textarea>
+        <textarea placeholder="Comentários" name="comment" required=""></textarea>
         <input type="submit" id="enviarEmail" name="" value="enviar">
       </form>
     </div>
