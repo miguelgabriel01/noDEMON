@@ -13,18 +13,30 @@
 	         <canvas class="line-chart" style="height: -300px; width: -100px;"></canvas>
 	         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 	         <script>
-	            var ctx = document.getElementsByClassName("line-chart");
+	         	var notas = ['542','485','901','700'];	            
+	         	var ctx = document.getElementsByClassName("line-chart");
 	            var chartGraph = new Chart(ctx, {
 	                  type: 'line',
 	                  data: {
 	                     labels:["2015","2016","2017","2018"],
 	                     datasets: [{
 	                        label:'Média no Enem nos ultimos anos!',
-	                        data: [750,640,745,540],
+	                        data: notas,
 	                        borderColor: 'green',
 	                        borderWidth: '2'
 	                     }]
 	                  },
+	            	options: {
+	            		scales: {
+	            			yAxes: [
+	            				{ 
+	            					ticks: {
+	            						beginAtZero: true
+	            					}
+	            				}
+	            			]
+	            		}
+	            	}
 	            });
          </script> 
          </div>          
