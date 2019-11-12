@@ -319,3 +319,23 @@ textarea{
 	border-collapse: collapse;
 }
 
+iframe{
+	position: relative;
+bottom: -40px;
+	width: 1200px;
+height: 600px;
+
+}
+
+
+h2{
+	color:black;
+	font-size:50px;
+text-align:center;
+}
+
+
+h1,p{
+	text-align: center;
+	
+}
