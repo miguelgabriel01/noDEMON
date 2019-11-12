@@ -301,33 +301,6 @@ textarea{
 }
 
 
-.galeria{
-	display: flex;
-	width: 100%;
-	height: 800px;
-	border: 2px solid black;
-	background: orange;
-	   align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
-
-#subtituloGaleria{
-	display: flex;
-     color: white;
-	font-size: 60px;
-
-}
-
-#entrarGaleria{
-    display: flex;
-    color: white;
-	text-decoration: none;
-	font-size: 30px;
-    margin-top: 30px;
-}
-
 
 
  tr, td,th {
