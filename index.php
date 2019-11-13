@@ -30,7 +30,6 @@ include "model/Escolas.php";
 
 
 	<h1>Bem vindo ao SNRC</h1>
-	<h3>Encontre o melhor centro de ensino na sua região..</h3>
 
 	<?php if(isset($_GET['msg'])) :?>
 		<h1><?= $_GET['msg'] ?> </h1>
@@ -40,7 +39,7 @@ include "model/Escolas.php";
 
 
 	<form method="get" action="dados_escola.php">
-	<select name="xpto">
+	<select name="xpto" class="pesq">
 
 						<?php foreach($escola->link() as $data) : ?>
 
