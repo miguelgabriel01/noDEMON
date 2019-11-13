@@ -22,6 +22,18 @@ require_once "../config/conexao.php";
 	    <li><a href="sair.php">Sair</a></li></li>
 
 	</nav>
+		<script>
+		     var as = document.querySelectorAll('a');
+        as[5].addEventListener('click', function(evt) {
+            alert('Tem certeza que deseja sair??');
+            if (confirm('Tem certeza, a mais de bala?')) {
+                alert('Dale teu grau, corno.');
+            } else {
+                alert('O bicho é gado mesmo!');
+                evt.preventDefault();
+            }
+        })
+	</script>
 </header>
 
 <section class="imgP">

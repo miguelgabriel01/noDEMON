@@ -10,7 +10,7 @@ create database if not exists SNRC;
 			endereco VARCHAR(50) NOT NULL,
 			cidade VARCHAR(30) NOT NULL,
 			estado VARCHAR(35) NOT NULL,
-			senha VARCHAR(15) NOT NULL
+			senha VARCHAR(30) NOT NULL
 	);
 
 
@@ -20,8 +20,8 @@ create database if not exists SNRC;
 			endereco VARCHAR(50) NOT NULL,
 			cidade VARCHAR(30) NOT NULL,
 			cep VARCHAR(8) NOT NULL,
-			telefone VARCHAR(10) NOT NULL,
-			mapa VARCHAR(5000) NOT NULL
+			telefone VARCHAR(11) NOT NULL,
+			mapa VARCHAR(255) NOT NULL
 	);
 
 	CREATE TABLE notas(

@@ -24,6 +24,18 @@ header("location:login.php");
 		<li><a href="sobre.php">Sobre</a></li></li>
 		<li><a href="sair.php">Sair</a></li></li>
 	</nav>
+		<script>
+		     var as = document.querySelectorAll('a');
+        as[6].addEventListener('click', function(evt) {
+            alert('Tem certeza que deseja sair??');
+            if (confirm('Tem certeza, a mais de bala?')) {
+                alert('Dale teu grau, corno.');
+            } else {
+                alert('O bicho é gado mesmo!');
+                evt.preventDefault();
+            }
+        })
+	</script>
 </header>
 
 <section class="imgP">
@@ -44,25 +56,25 @@ header("location:login.php");
 	</div> 
 		
 	<div class="meio">
-	<input type="text" name="cidade" required=" " >
+	<input type="text" name="cidade" required="" >
 	<label>Cidade</label>
 	</div> 
 		
 	<div class="meio">
-	<input type="text" name="cep" required=" " >
+	<input type="number" name="cep" required="" maxlength="8">
 	<label>Cep</label>
 	</div> 
 	
 	
 	<div class="meio">
-	<input type="text" name="telefone" required=" " >
+	<input type="number" name="telefone" required="" maxlength="11" >
 	<label>Telefone</label>
 	</div> 
 	
 	
 	<div class="meio">
-	<input type="text" name="mapa" required=" " >
-	<label>link do google maps</label>
+	<input type="text" name="mapa" required="" >
+	<label>Link do google maps</label>
 	</div> 
 	<input type="submit" name="" value="Entrar">
 	

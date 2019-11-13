@@ -22,8 +22,19 @@ include "model/Escolas.php";
 		<li><a href="view/sobre.php">Sobre</a></li></li>
 		<li><a href="view/cadastro_escola.php">Cadastrar Escola</a></li>
 		<li><a href="sair.php">Sair</a></li></li>
-
 	</nav>
+	<script>
+		     var as = document.querySelectorAll('a');
+        as[6].addEventListener('click', function(evt) {
+            alert('Tem certeza que deseja sair??');
+            if (confirm('Tem certeza, a mais de bala?')) {
+                alert('Dale teu grau, corno.');
+            } else {
+                alert('O bicho é gado mesmo!');
+                evt.preventDefault();
+            }
+        })
+	</script>
 </header>
 
 <section class="imgP">
@@ -48,7 +59,7 @@ include "model/Escolas.php";
 
 
 	</select>
-	<input type="submit" value="Pesquisar" id="enviar" >
+	<input type="submit" value="Pesquisar" id="Enviar" >
 	</form>
 
 
