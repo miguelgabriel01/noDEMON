@@ -53,7 +53,7 @@
       <tr>
         <td>Telefone: <?= $data["telefone"] ?> </td>
       <tr>
-        <td>Mapa: <iframe src="<?= $data["mapa"] ?>" width="" height="" frameborder="0" style="border:0;"
+        <td>Mapa: <iframe src="<?= $data["mapa"] ?>" width="" height="" frameborder="0" style="border:1px solid black;width:900px;height:500px"
             allowfullscreen=""> </iframe></td>
 
         <?php endforeach ?>
@@ -99,7 +99,7 @@
   
   <section class="duvidas">
     <div class="principal">
-      <h2 id="duvidas">Dúvidas</h2>
+      <h2 id="duvidas">Comentarios</h2>
       <form method="POST" action="../controller/cadastrar_comentario.php">
         <div class="meio">
           <input type="hidden" name="id" required="" value="<?= $_SESSION["logado"]["id"] ?>">
