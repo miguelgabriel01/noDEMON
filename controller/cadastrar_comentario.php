@@ -1,5 +1,5 @@
 <?php
-  include "../model/Comments.php";
+  require_once "../model/Comments.php";
 
  	$id = $_POST["id"];
  	$comment = $_POST["comment"];
@@ -8,7 +8,6 @@
 
  	$comentario = new Comments();
 
-   print_r($_POST);
  if(!empty($id) && !empty($comment) && !empty($id_escola) && !empty($nome)){
 
  	$comentario->Comentar($comment, $id, $id_escola, $nome);

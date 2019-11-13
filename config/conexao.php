@@ -3,7 +3,7 @@
     private static $conn;
     public static function getConn() {
       if (self::$conn == null) {
-          self::$conn = new PDO("mysql:host=localhost;dbname=SNRC", "lucas", "");
+          self::$conn = new PDO("mysql:host=localhost;dbname=SNRC", "root", "");
       }
       return self::$conn;
     }

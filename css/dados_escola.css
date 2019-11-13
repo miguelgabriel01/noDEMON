@@ -13,7 +13,7 @@ list-style: none;
 
 a{
 text-decoration: none;
-color: white;
+color: green;
 cursor: pointer;
 opacity: 0.9;
 font-size: 20px;
@@ -85,6 +85,7 @@ text-align:center;
 
 
 .hero{
+background-image: url("../img/onu.jpg");
 color: #fff;
 text-align: center;
 background-size: cover;
@@ -301,14 +302,38 @@ textarea{
 }
 
 
+.galeria{
+	display: flex;
+	width: 100%;
+	height: 800px;
+	border: 2px solid black;
+	background: orange;
+	   align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#subtituloGaleria{
+	display: flex;
+     color: white;
+	font-size: 60px;
+
+}
+
+#entrarGaleria{
+    display: flex;
+    color: white;
+	text-decoration: none;
+	font-size: 30px;
+    margin-top: 30px;
+}
+
 
 
  tr, td,th {
-
-	color:black;
-	font-size:30px;
-		border: none;
-		 padding: 5px;
+		border: 2px solid black;
+		 padding: 1px;
 		 width: 300px;
 		 text-align: center;
 
@@ -318,24 +343,7 @@ textarea{
 .table{
 	border-collapse: collapse;
 }
-
-iframe{
-	position: relative;
-bottom: -40px;
-	width: 1200px;
-height: 600px;
-
+section.hero{
+margin-top: 45px;
 }
 
-
-h2{
-	color:black;
-	font-size:50px;
-text-align:center;
-}
-
-
-h1,p{
-	text-align: center;
-	
-}

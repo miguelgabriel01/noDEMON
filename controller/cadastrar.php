@@ -1,13 +1,13 @@
 <?php
   //session_start();
-  include "../model/Usuario.php";
+  require_once "../model/Usuario.php";
   $nome = $_POST["nome"];
   $email = $_POST["email"];
   $endereco = $_POST["endereco"];
   $cidade = $_POST["cidade"];
   $estado = $_POST["estado"];
   $senha = $_POST["senha"];
-  
+
   $usuario = new Usuario();
 
   //if($cidade != $estado) {
@@ -22,7 +22,7 @@
       header("Location: /index.php?msg=Usuário cadastrado com sucesso!");
 /*
 
-     
+
     if($usuario->verificaUsuarioExiste($_POST["nome"])) {
       $usuario->cadastrarUsuario($nome, $email, $endereco, $cidade,$estado, $senha);
       $usuario->login($email, $senha);

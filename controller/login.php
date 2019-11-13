@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-include "../model/Usuario.php";
+require_once "../model/Usuario.php";
 
 $email = $_POST["email"];
 $senha = $_POST["senha"];
@@ -10,7 +10,7 @@ $usuario = new Usuario();
 
 if(!empty($email) && !empty($senha)){
 	if ($usuario->login($email, $senha)){
-	header("Location: ../index.php?msg=Usuário logado com sucesso!");	
+	header("Location: ../index.php?msg=Usuário logado com sucesso!");
 	} else{
 	header('location: ../login.php?msg=Login ou Senha inválidos.');
 	}

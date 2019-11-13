@@ -1,4 +1,4 @@
-<?php 
+<?php
 include "../config/conexao.php";
 
 
@@ -16,7 +16,7 @@ class Usuario{
 			$consulta->bindValue(":senha", $senha);
 			$consulta->execute();
 	}
- 	
+
  	public function login($email, $senha) {
  		$con = Connection::getConn();
  		$consulta = $con->prepare("SELECT * FROM usuario WHERE email = ? and senha = ?");

@@ -1,5 +1,5 @@
-<?php 
-include "../model/Escolas.php";
+<?php
+require_once "../model/Escolas.php";
 
 
 $nome = $_POST["nome"];

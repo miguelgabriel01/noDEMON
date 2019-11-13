@@ -9,7 +9,7 @@ create database if not exists SNRC;
 			email VARCHAR(30) NOT NULL,
 			endereco VARCHAR(50) NOT NULL,
 			cidade VARCHAR(30) NOT NULL,
-			estado VARCHAR(2) NOT NULL,
+			estado VARCHAR(35) NOT NULL,
 			senha VARCHAR(15) NOT NULL
 	);
 
@@ -18,20 +18,18 @@ create database if not exists SNRC;
 			id INT AUTO_INCREMENT PRIMARY KEY,
 			nome VARCHAR(50) NOT NULL,
 			endereco VARCHAR(50) NOT NULL,
-			cidade VARCHAR(30) NOT NULL,		
-			cep VARCHAR(8) NOT NULL,		
-			telefone VARCHAR(10) NOT NULL,		
+			cidade VARCHAR(30) NOT NULL,
+			cep VARCHAR(8) NOT NULL,
+			telefone VARCHAR(10) NOT NULL,
 			mapa VARCHAR(5000) NOT NULL
 	);
 
-	CREATE TABLE dados_enem(
-			ano INT(4) NOT NULL PRIMARY KEY,
-			mat VARCHAR(4) NOT NULL,
-			hist VARCHAR(4) NOT NULL,
-			
-			id_escolas INT NOT NULL,
-		    FOREIGN KEY(id_escolas) REFERENCES escolas(id)
-			
+	CREATE TABLE notas(
+			id INT AUTO_INCREMENT PRIMARY KEY,
+			nota_15 INT(4) NOT NULL,
+			nota_16 INT(4) NOT NULL,
+			nota_17 INT(4) NOT NULL,
+			nota_18 INT(4) NOT NULL
 	);
 	CREATE TABLE comments(
 			id INT AUTO_INCREMENT PRIMARY KEY,
