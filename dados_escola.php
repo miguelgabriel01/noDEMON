@@ -99,7 +99,7 @@
   
   <section class="duvidas">
     <div class="principal">
-      <h2>Dúvidas</h2>
+      <h2 id="duvidas">Dúvidas</h2>
       <form method="POST" action="../controller/cadastrar_comentario.php">
         <div class="meio">
           <input type="hidden" name="id" required="" value="<?= $_SESSION["logado"]["id"] ?>">
