@@ -13,34 +13,16 @@ include "model/Escolas.php";
 <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-<header>
-	<a href="">SNRC</a>
-	<nav>
-		<li><a href="index.php">Inicio</a></li>
-		<li><a href="view/login.php" >Login</a></li>
-		<li><a href="view/cadastro_usuario.php">Cadastro</a></li>
-		<li><a href="view/sobre.php">Sobre</a></li></li>
-		<li><a href="view/cadastro_escola.php">Cadastrar Escola</a></li>
-		<li><a href="sair.php">Sair</a></li></li>
-	</nav>
-	<script>
-		     var as = document.querySelectorAll('a');
-        as[6].addEventListener('click', function(evt) {
-            alert('Tem certeza que deseja sair??');
-            if (confirm('Tem certeza, a mais de bala?')) {
-                alert('Dale teu grau, corno.');
-            } else {
-                alert('O bicho é gado mesmo!');
-                evt.preventDefault();
-            }
-        })
-	</script>
-</header>
+<?php 
+  include "header.php";
+?>
+
 
 <section class="imgP">
 
 
 	<h1>Bem vindo ao SNRC</h1>
+	<h3>Encontre o melhor centro de ensino na sua região..</h3>
 
 	<?php if(isset($_GET['msg'])) :?>
 		<h1><?= $_GET['msg'] ?> </h1>
@@ -50,7 +32,7 @@ include "model/Escolas.php";
 
 
 	<form method="get" action="dados_escola.php">
-	<select name="xpto" class="pesq">
+	<select name="xpto">
 
 						<?php foreach($escola->link() as $data) : ?>
 
@@ -59,7 +41,7 @@ include "model/Escolas.php";
 
 
 	</select>
-	<input type="submit" value="Pesquisar" id="Enviar" >
+	<input type="submit" value="Pesquisar" id="enviar" >
 	</form>
 
 

@@ -29,7 +29,13 @@
    	$consulta->bindValue(":id", $id);
    	$consulta->execute();
    	return $consulta->fetchAll();
-   }
+	 }
+		public function deletar($id){
+			$con = Connection::getConn();
+			$consulta = $con->prepare("DELETE escolas WHERE id = :id;");
+			$consulta->bindValue(":id, $id");
+			$consulta->execute();
+		}
 
   }
 ?>

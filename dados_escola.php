@@ -24,19 +24,10 @@
 </head>
 
 <body>
-  <header>
-    <a href="">SNRC</a>
-    <nav>
+  <?php 
+  include "header.php";
+  ?>
 
-      <li><a href="index.php">Inicio</a></li>
-      <li><a href="view/login.php">Login</a></li>
-      <li><a href="view/cadastro_usuario.php">Cadastro</a></li>
-      <li><a href="view/sobre.php">Sobre</a></li>
-      </li>
-      <li><a href="sair.php">Sair</a></li>
-      </li>
-    </nav>
-  </header>
   <section class="hero">
     <table class='table'>
       <?php foreach($escola->get($id) as $data) : ?>
@@ -53,12 +44,12 @@
       <tr>
         <td>Telefone: <?= $data["telefone"] ?> </td>
       <tr>
-        <td>Mapa: <iframe src="<?= $data["mapa"] ?>" width="" height="" frameborder="0" style="border:1px solid black;width:900px;height:500px"
+        <td>Mapa: <iframe src="<?= $data["mapa"] ?>" width="" height="" frameborder="0" style="border:0;"
             allowfullscreen=""> </iframe></td>
 
         <?php endforeach ?>
 
-    </table><button> <a href='view/notas_enem.php'>Gráfico</a></button>
+    </table><button> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>'>Gráfico</a></button>
   <div style="width: 400px; height: 400px;">   	
 	         <canvas class="line-chart" style="height: -300px; width: -100px;"></canvas>
 	         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
@@ -99,7 +90,7 @@
   
   <section class="duvidas">
     <div class="principal">
-      <h2 id="duvidas">Comentarios</h2>
+      <h2>Dúvidas</h2>
       <form method="POST" action="../controller/cadastrar_comentario.php">
         <div class="meio">
           <input type="hidden" name="id" required="" value="<?= $_SESSION["logado"]["id"] ?>">

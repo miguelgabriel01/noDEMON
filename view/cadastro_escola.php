@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["logado"]) ){
-header("location:login.php");
+header("location:login.php?msg=Logue-se para cadastrar uma escola!");
 }
 ?>
 
@@ -13,30 +13,17 @@ header("location:login.php");
 <link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 <body>	
-<header>
-	<a href="">SNRC</a>
-	<nav>
+<?php 
+  include "../header.php";
+  ?>
+	<?php if(!isset($_GET["msg"])) :?>
 
-		<li><a href="../index.php">Inicio</a></li>
-		<li><a href="login.php" >Cadastrar Escolas</a></li>
-		<li><a href="cadastro_usuario.php">Cadastro</a></li>
-		<li><a href="mapa_escola.php">Mapa</a></li>
-		<li><a href="sobre.php">Sobre</a></li></li>
-		<li><a href="sair.php">Sair</a></li></li>
-	</nav>
-		<script>
-		     var as = document.querySelectorAll('a');
-        as[6].addEventListener('click', function(evt) {
-            alert('Tem certeza que deseja sair??');
-            if (confirm('Tem certeza, a mais de bala?')) {
-                alert('Dale teu grau, corno.');
-            } else {
-                alert('O bicho é gado mesmo!');
-                evt.preventDefault();
-            }
-        })
-	</script>
-</header>
+
+				<h2> <?= $_GET["msg"] ?> </h2>
+
+
+	<?php endif ?>
+
 
 <section class="imgP">
 	
@@ -56,25 +43,25 @@ header("location:login.php");
 	</div> 
 		
 	<div class="meio">
-	<input type="text" name="cidade" required="" >
+	<input type="text" name="cidade" required=" " >
 	<label>Cidade</label>
 	</div> 
 		
 	<div class="meio">
-	<input type="number" name="cep" required="" maxlength="8">
+	<input type="text" name="cep" required=" " >
 	<label>Cep</label>
 	</div> 
 	
 	
 	<div class="meio">
-	<input type="number" name="telefone" required="" maxlength="11" >
+	<input type="text" name="telefone" required=" " >
 	<label>Telefone</label>
 	</div> 
 	
 	
 	<div class="meio">
-	<input type="text" name="mapa" required="" >
-	<label>Link do google maps</label>
+	<input type="text" name="mapa" required=" " >
+	<label>link do google maps</label>
 	</div> 
 	<input type="submit" name="" value="Entrar">
 	

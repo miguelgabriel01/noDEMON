@@ -10,7 +10,7 @@ create database if not exists SNRC;
 			endereco VARCHAR(50) NOT NULL,
 			cidade VARCHAR(30) NOT NULL,
 			estado VARCHAR(35) NOT NULL,
-			senha VARCHAR(30) NOT NULL
+			senha VARCHAR(15) NOT NULL
 	);
 
 
@@ -20,8 +20,8 @@ create database if not exists SNRC;
 			endereco VARCHAR(50) NOT NULL,
 			cidade VARCHAR(30) NOT NULL,
 			cep VARCHAR(8) NOT NULL,
-			telefone VARCHAR(11) NOT NULL,
-			mapa VARCHAR(255) NOT NULL
+			telefone VARCHAR(10) NOT NULL,
+			mapa VARCHAR(5000) NOT NULL
 	);
 
 	CREATE TABLE notas(
@@ -29,7 +29,10 @@ create database if not exists SNRC;
 			nota_15 INT(4) NOT NULL,
 			nota_16 INT(4) NOT NULL,
 			nota_17 INT(4) NOT NULL,
-			nota_18 INT(4) NOT NULL
+			nota_18 INT(4) NOT NULL,
+			id_escolas INT not null,
+			FOREIGN KEY(id_escolas) REFERENCES escolas(id)
+
 	);
 	CREATE TABLE comments(
 			id INT AUTO_INCREMENT PRIMARY KEY,

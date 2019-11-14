@@ -11,36 +11,12 @@ require_once "../config/conexao.php";
 <link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 <body>
-<header>
-	<a href="">SNRC</a>
-	<nav>
+<?php 
+  include "../header.php";
+  ?>
 
-		<li><a href="../index.php">Inicio</a></li>
-		<li><a href="login.php" >Login</a></li>
-		<li><a href="cadastro_usuario.php">Cadastro</a></li>
-		<li><a href="sobre.php">Sobre</a></li></li>
-	    <li><a href="sair.php">Sair</a></li></li>
-
-	</nav>
-		<script>
-		     var as = document.querySelectorAll('a');
-        as[5].addEventListener('click', function(evt) {
-            alert('Tem certeza que deseja sair??');
-            if (confirm('Tem certeza, a mais de bala?')) {
-                alert('Dale teu grau, corno.');
-            } else {
-                alert('O bicho é gado mesmo!');
-                evt.preventDefault();
-            }
-        })
-	</script>
-</header>
 
 <section class="imgP">
-
-
-
-
 
 	<div class="principal">
 

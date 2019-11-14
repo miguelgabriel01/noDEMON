@@ -6,17 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="../css/cadastro_usuario.css">
 </head>
 <body>
-<header>
+<?php 
+  include "../header.php";
+  ?>
 
-	<a href="">SNRC</a>
-	<nav>
-
-    <li><a href="../index.php">Inicio</a></li>
-    <li><a href="login.php" >Login</a></li>
-    <li><a href="cadastro_usuario.php">Cadastro</a></li>
-    <li><a href="sobre.php">Sobre</a></li></li>
-	</nav>
-</header>
 
 <div class="formulário">
 	

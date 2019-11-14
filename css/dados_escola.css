@@ -85,6 +85,7 @@ text-align:center;
 
 
 .hero{
+background-image: url("../img/onu.jpg");
 color: #fff;
 text-align: center;
 background-size: cover;
@@ -306,8 +307,10 @@ textarea{
 	width: 100%;
 	height: 800px;
 	border: 2px solid black;
-	background:white;
-	padding: 60px;
+	background: orange;
+	   align-items: center;
+    justify-content: center;
+    align-content: center;
     flex-direction: column;
 }
 
@@ -329,14 +332,10 @@ textarea{
 
 
  tr, td,th {
-		border: none;
-		 padding: 3px;
-		 margin-top: 20px;
+		border: 2px solid black;
+		 padding: 1px;
 		 width: 300px;
 		 text-align: center;
-color: black;
-font-size:25px ;
-
 
 
 	}
@@ -348,17 +347,3 @@ section.hero{
 margin-top: 45px;
 }
 
-
-#duvidas{
-
-color: black;
-font-size: 60px;
-text-align: center;
-
-
-
-}
-
-iframe{
-	margin-top: 20px;
-}
