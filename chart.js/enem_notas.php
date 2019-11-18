@@ -4,7 +4,7 @@ include "../model/Notas.php";
 include_once "../config/conexao.php";
 
 $notas = new Notas();
-print_r($notas);
+print_r($_POST['id']);
 
 ?>
 

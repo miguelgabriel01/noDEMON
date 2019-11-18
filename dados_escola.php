@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <?php 
+  <?php
   include "header.php";
   ?>
 
@@ -50,24 +50,31 @@
         <?php endforeach ?>
 
     </table><button> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>'>Gráfico</a></button>
-  <div style="width: 400px; height: 400px;">   	
+  <div style="width: 400px; height: 400px;">
 	         <canvas class="line-chart" style="height: -300px; width: -100px;"></canvas>
 	         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+            <?php
+              $not = json_encode($notas->Selec($id));
+            ?>
            <?php foreach($notas->Selec($id) as $nota) : ?>
-	         <script value="<?= $nota["id"] ?>">
 
 
-	         	var notas = ['<?= $nota["nota_15"] ?>','<?= $nota["nota_16"] ?>','<?= $nota["nota_17"] ?>','<?= $nota["nota_18"] ?>'];	            
-	         	var ctx = document.getElementsByClassName("line-chart");
-             <?php endforeach ?>
+          <?php endforeach ?>
+          <script>
+
+            var notas = <?= $not ?>;
+            const notasEnem = notas.map(item => item.nota_enem);
+            const ano = notas.map(item => item.ano);
+            console.log(ano);
+            var ctx = document.getElementsByClassName("line-chart");
 
 	            var chartGraph = new Chart(ctx, {
 	                  type: 'line',
 	                  data: {
-	                     labels:["2015","2016","2017","2018"],
+	                     labels: ano.sort(),
 	                     datasets: [{
 	                        label:'Média no Enem nos ultimos anos!',
-	                        data: notas,
+	                        data: notasEnem,
 	                        borderColor: 'green',
 	                        borderWidth: '2'
 	                     }]
@@ -75,7 +82,7 @@
 	            	options: {
 	            		scales: {
 	            			yAxes: [
-	            				{ 
+	            				{
 	            					ticks: {
 	            						beginAtZero: true
 	            					}
@@ -84,10 +91,10 @@
 	            		}
 	            	}
 	            });
-         </script> 
-         </div>          
+         </script>
+         </div>
   </section>
-  
+
   <section class="duvidas">
     <div class="principal">
       <h2>Dúvidas</h2>

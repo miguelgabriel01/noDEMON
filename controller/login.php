@@ -12,7 +12,7 @@ if(!empty($email) && !empty($senha)){
 	if ($usuario->login($email, $senha)){
 	header("Location: ../index.php?msg=Usuário logado com sucesso!");
 	} else{
-	header('location: ../login.php?msg=Login ou Senha inválidos.');
+	header('location: ../view/login.php?msg=Login ou Senha inválidos.');
 	}
 }
 ?>

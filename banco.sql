@@ -26,10 +26,8 @@ create database if not exists SNRC;
 
 	CREATE TABLE notas(
 			id INT AUTO_INCREMENT PRIMARY KEY,
-			nota_15 INT(4) NOT NULL,
-			nota_16 INT(4) NOT NULL,
-			nota_17 INT(4) NOT NULL,
-			nota_18 INT(4) NOT NULL,
+			ano INT NOT NULL,
+			nota_enem INT(4) NOT NULL,
 			id_escolas INT not null,
 			FOREIGN KEY(id_escolas) REFERENCES escolas(id)
 
