@@ -13,7 +13,7 @@ class Notas{
 
     public function Selec($id){
             $con = Connection::getConn();
-            $consulta = $con->prepare("SELECT * FROM notas WHERE id_escolas = :id;");
+            $consulta = $con->prepare("SELECT * FROM notas WHERE id_escolas = :id ORDER BY ano;");
             $consulta->bindValue(':id', $id);
             $consulta->execute();
             return $consulta->fetchAll();
