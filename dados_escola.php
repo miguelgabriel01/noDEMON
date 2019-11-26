@@ -7,12 +7,11 @@
     require_once "model/Notas.php";
 
     $comment = new Comments();
-    $id = $_GET["xpto"];
     print_r($_SESSION["logado"]["nome"]);
-     $escola = new Escolas();
-      $notas = new Notas();
-      $id = $_GET["xpto"];
-      ?>
+    $escola = new Escolas();
+    $notas = new Notas();
+    $id = $_GET["xpto"];
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -93,21 +92,27 @@
 	            });
          </script>
          </div>
+         </select>
          <div style="width: 300px; height: 300px;">
          <canvas class="radar-chart" width="2" height="2"></canvas>
          <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
          <script>
-            var materia_notas = notas;
+
+            var materia_notas = <?= json_encode($notas->Selec($id)); ?>;
+            console.log(materia_notas);
+            const notas22 = materia_notas.map(item => {
+              return {
+                label: `Ano ${item.ano}`,
+                data: [item.nota_ce, item.nota_ch, item.nota_enem, item.nota_mat, item.nota_port, item.nota_red],
+                borderColor: "green"
+              }
+            })
             var ctx = document.getElementsByClassName("radar-chart");
             var chartGraph = new Chart(ctx, {
                type: 'radar',
                data: {
                      labels:["Português","Matemática","Redação","Humanas","Exatas"],
-                     datasets: [{
-                        label:'Notas das matérias da escola no ultimo ENEM',
-                        data: materia_notas,
-                        borderColor:"green",
-                        }]
+                     datasets: notas22
                      },
                      options: {
                          scale: {
@@ -170,3 +175,8 @@
 </body>
 
 </html>
+<pre>
+  <?php
+    print_r(json_encode($notas->Selec($id)));
+  ?>
+</pre>
