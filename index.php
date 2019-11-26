@@ -22,7 +22,6 @@ include "model/Escolas.php";
 
 
 	<h1>Bem vindo ao SNRC</h1>
-	<h3>Encontre o melhor centro de ensino na sua região..</h3>
 
 	<?php if(isset($_GET['msg'])) :?>
 		<h1><?= $_GET['msg'] ?> </h1>

@@ -3,7 +3,10 @@ margin: 0;
 padding: 0;
 font-size: 100%;
 box-sizing: border-box;
+
 }
+
+/*menu*/
 
 nav,ul{
 list-style: none;
@@ -23,7 +26,7 @@ opacity: 1;
 
 
 header{
-background-color:rgba(0, 0, 0, .8);
+background-color:black ;
 width: 100%;
 position: absolute;
 top: 0;
@@ -63,9 +66,10 @@ flex-direction: column;
 
 
 
+/*imagem de fundo(principal)*/
 
 .imgP{
-background-image: url("https://images.unsplash.com/photo-1457276587196-a9d53d84c58b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+background-image: url("../img/onu.jpg");
 color: #fff;
 text-align: center;
 background-size: cover;
@@ -76,12 +80,9 @@ align-items: center;
 flex-direction: column
 }
 
-
 .imgP h1{
 font-size: 50px;
 margin-bottom: 15px;
-filter:contrast(200%) brightness(150%);
-
 }
 .imgP h3{
 font-size: 25px;
@@ -120,10 +121,9 @@ justify-content:center;
  color:white;
  border:none; 
  justify-content:center;
+ margin-left:300px;
+ margin-top:20px;
  background:darkcyan;
- margin: 0 auto;
- margin-top: 20px;
-
  }
 
 
@@ -143,23 +143,3 @@ width: 500px;
 height: 40px;
 
 }
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 15px 10px 15px;
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-li a:hover{
-  background-color: darkcyan;
-    text-decoration: underline;
-}
-
