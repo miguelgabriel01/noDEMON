@@ -12,7 +12,7 @@
 		<li><a href="../view/login.php">Login</a></li>
 	<?php endif ?>
 	<?php if(isset($_SESSION["logado"])) : ?>
-		<li><a href="#"><?=$_SESSION["logado"]["nome"]?></a></li>
+		<li><a><?=$_SESSION["logado"]["nome"]?></a></li>
 		<li><a href="../sair.php">Sair</a></li></li>
 	<?php endif ?>
 	</nav>

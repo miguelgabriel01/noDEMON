@@ -40,7 +40,7 @@ include "model/Escolas.php";
 
 
 	</select>
-	<input type="submit" value="Pesquisar" id="enviar" >
+<b>	<input type="submit" class="butao" value="Pesquisar"></b>
 	</form>
 
 

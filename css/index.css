@@ -3,10 +3,12 @@ margin: 0;
 padding: 0;
 font-size: 100%;
 box-sizing: border-box;
+font-family: sans-serif;
 }
 
 nav,ul{
 list-style: none;
+transition: 3s;
 }
 
 a{
@@ -23,6 +25,7 @@ opacity: 1;
 
 
 header{
+transition: 4s;
 background-color:rgba(0, 0, 0, .8);
 width: 100%;
 position: absolute;
@@ -31,7 +34,7 @@ left: 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 20px 50px;
+padding: 10px 50px;
 }
 
 header nav{
@@ -78,10 +81,10 @@ flex-direction: column
 
 
 .imgP h1{
-font-size: 50px;
+font-size: 45px;
 margin-bottom: 15px;
-filter:contrast(200%) brightness(150%);
-
+color: white;
+text-shadow: 2px 2px 8px #F28A02;
 }
 .imgP h3{
 font-size: 25px;
@@ -113,31 +116,28 @@ justify-content:center;
 
 }
 
- #enviar{
- display:flex;
- width:100px;
- height:50px;
+
+.butao{
+  background:#F28A02;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 17px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 3s;
  color:white;
  border:none; 
  justify-content:center;
- background:darkcyan;
- margin: 0 auto;
- margin-top: 20px;
-
- }
-
-
-@media(max-width: 700px){
-h1{
-font-size: 2.5rem;
-}
-h3{
-font-size: 1.5rem;
 }
 
-}
 
 select{
+  background: #F7F7F7;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
 
 width: 500px;
 height: 40px;
@@ -159,7 +159,7 @@ li a {
 }
 
 li a:hover{
-  background-color: darkcyan;
+  background-color: #F28A02;
     text-decoration: underline;
 }
 
