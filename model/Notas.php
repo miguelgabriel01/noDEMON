@@ -22,7 +22,15 @@ class Notas{
             $consulta->bindValue(':id', $id);
             $consulta->execute();
             return $consulta->fetchAll();
-        }
+    }
+
+    public function notaEscola($id) {
+        $con = Connection::getConn();
+        $consulta = $con->prepare("SELECT * FROM notas WHERE id_escolas = :id");
+        $consulta->bindValue(":id", $id);
+        $consulta->execute();
+        return $consulta->fetchAll();
+    }
 
  }
 
