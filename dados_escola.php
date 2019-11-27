@@ -103,7 +103,7 @@
             const notas22 = materia_notas.map(item => {
               return {
                 label: `Ano ${item.ano}`,
-                data: [item.nota_ce, item.nota_ch, item.nota_enem, item.nota_mat, item.nota_port, item.nota_red],
+                data: [item.nota_ce, item.nota_ch, item.nota_mat, item.nota_port, item.nota_red],
                 borderColor: "green"
               }
             })
