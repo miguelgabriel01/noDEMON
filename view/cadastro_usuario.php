@@ -12,8 +12,8 @@
 
 
 <div class="formulário">
-	
-	<h2>Usuário</h2>
+	<h1>Ainda não possui uma conta?</h1>
+	<h2>Cadastre-se!</h2>
     
     <form action="../controller/cadastrar.php" method="POST">
 
@@ -49,11 +49,14 @@
        
        
     
-        <input type="submit" name="" value="entrar">
+        <input type="submit" name="" value="Enviar">
      </form>
        
 </div>
+  <h3 class="spone">SNRC</h3>
+  <h4 class="tone">Sistema de busca de Escolas da região</h4>
 
+    
 	
 </body>
 </html>

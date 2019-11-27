@@ -10,6 +10,8 @@ box-sizing: border-box;
 
 nav,ul{
 list-style: none;
+transition: 3s;
+
 }
 
 a{

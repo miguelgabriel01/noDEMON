@@ -3,6 +3,8 @@ margin: 0;
 padding: 0;
 font-size: 100%;
 box-sizing: border-box;
+font-family: sans-serif;
+
 
 }
 
@@ -10,6 +12,8 @@ box-sizing: border-box;
 
 nav,ul{
 list-style: none;
+transition: 3s;
+
 }
 
 a{
@@ -26,7 +30,7 @@ opacity: 1;
 
 
 header{
-background-color:black ;
+background-color:rgba(0, 0, 0, .8);
 width: 100%;
 position: absolute;
 top: 0;
@@ -34,7 +38,8 @@ left: 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 20px 50px;
+padding: 10px 50px;
+
 }
 
 header nav{
@@ -65,38 +70,58 @@ flex-direction: column;
 }
 
 
-
-
 body{
-	
-	font-family:sans-serif;
-	background: url(img1.jpg);
-	background-size: cover;
-	background-color:darkcyan;
+	background-image: url("https://images.pexels.com/photos/1448709/pexels-photo-1448709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+
+/* font-family:sans-serif;
+ background-size: cover;
+ background: -webkit-linear-gradient(top left, #333, #f562);
+ background: -moz-linear-gradient(top left, #333, #f666);
+ background: -o-linear-gradient(top left, #333, #f666);
+ background: linear-gradient(top left, #333, #f666);
+*/}
+.formulário .meio input:focus~label,
+.formulário .meio input:valid~label
+{
+top:-18px;
+left:0;
+color:#165E63;
+font-size:12px;
 }
 
+
 .formulário{
-	position: absolute;
-	top:55%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	width:400px;
-	padding:40px;
-	background: rgba(0,0,0,.8);
-	box-sizing: border-box;
-	box-shadow:0 15px 25px rgba(0,0,0,.5);
-	border-radius:10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    padding: 40px;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
 }
 
 .formulário h2{
-	margin:0 0 30px;
-	padding:0;
+	margin:0 0 1px;
+	/*padding:0;*/
 	color:#fff;
 	text-align: center;
+	font-size: 28px;
+
+}
+.formulário h1{
+	font-size: 13px;
+	color:white;
 }
 
 .formulário .meio{
 	position: relative;
+
+
 
 }
 
@@ -111,6 +136,8 @@ body{
 	border-bottom:1px solid;
     outline:none;
     background: transparent;
+
+
 }
 
 .formulário .meio label{
@@ -119,28 +146,61 @@ body{
 	left:0;
 	padding:10px 0;
 	font-size:16px;
-	color:#fff;
+	color: #fff;
     pointer-events: none;
     transition: .5s;
-}
-.formulário .meio input:focus~label,
-.formulário .meio input:valid~label
-{
-top:-18px;
-left:0;
-color:#03a9f4;
-font-size:12px;
-}
 
+}
 
 .formulário input[type="submit"]{
-	background: transparent;
-	border: none;
-	outline: none;
-	color:#fff;
-	background:#03a9f4;
-	padding:10px 20px;
-	cursor: pointer;
-	border-radius:10px;
+background: transparent;
+border: none;
+outline: none;
+color:#fff;
+background:#03a9f4;
+padding:10px 132px;
+cursor: pointer;
+border-radius:12px;
 
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #F28A02;
+    text-decoration: underline;
+}
+input[type="submit"]:hover{
+	background-color: #F28A02;
+}
+
+.spone{
+font-size: 120px;
+margin-top: 180px;
+margin-right: 10px;
+margin-left: 50px;
+color:#fff;
+font-family: sans-serif;
+text-shadow:6px 6px 6px #165E63;
+}
+
+.tone{
+	font-size: 21px;
+	margin-left: 30px;
+	margin-right: 5px;
+	margin-top: 15px;
+	color:#fff;
+	font-family: sans-serif;
 }

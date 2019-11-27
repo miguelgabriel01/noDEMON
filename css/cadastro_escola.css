@@ -10,6 +10,8 @@ box-sizing: border-box;
 
 nav,ul{
 list-style: none;
+transition: 3s;
+
 }
 
 a{
@@ -68,7 +70,6 @@ flex-direction: column;
 
 
 body{
-	
 	font-family:sans-serif;
 	background: url(img1.jpg);
 	background-size: cover;
