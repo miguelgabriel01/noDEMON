@@ -7,7 +7,6 @@
     require_once "model/Notas.php";
 
     $comment = new Comments();
-    print_r($_SESSION["logado"]["nome"]);
     $escola = new Escolas();
     $notas = new Notas();
     $id = $_GET["xpto"];

@@ -43,7 +43,8 @@ left: 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 10px 50px;
+padding: 0px 0px;
+height: 65px;
 }
 
 header nav{
@@ -56,7 +57,7 @@ color: white;
 }
            
 header li{
-margin: 0 15px;
+margin: 0px;
 
 }
 
@@ -169,14 +170,14 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 10px 15px 10px 15px;
-  border-radius: 10px;
+  padding: 20px 40px 20px 40px;
   text-decoration: none;
+  height: 65px;
 }
 
 li a:hover{
   background-color: #F28A02;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 input[type="submit"]:hover{

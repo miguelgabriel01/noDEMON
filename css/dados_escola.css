@@ -6,7 +6,13 @@ box-sizing: border-box;
 }
 
 /*menu*/
-
+body{
+	background-image: url("https://images.pexels.com/photos/6357/coffee-cup-desk-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+	
+}
+table{
+	
+}
 nav,ul{
 list-style: none;
 transition: 3s;
@@ -27,7 +33,7 @@ opacity: 1;
 
 
 header{
-background-color:black ;
+background-color:rgba(0, 0, 0, .8) ;
 width: 100%;
 position: absolute;
 top: 0;
@@ -35,7 +41,8 @@ left: 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 20px 50px;
+padding: 0px 0px;
+height: 65px;
 }
 
 header nav{
@@ -47,7 +54,7 @@ color: white;
 }
            
 header li{
-margin: 0 15px;
+margin: 0px;
 }
 
 header li:first-child{
@@ -347,4 +354,18 @@ textarea{
 section.hero{
 margin-top: 45px;
 }
-
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 20px 40px 20px 40px;
+  /*  border-radius: 10px;
+  */  text-decoration: none;
+	height: 65px;
+  }
+  
+  li a:hover{
+	background-color: #F28A02;
+	  text-decoration: none;
+  }
+  
