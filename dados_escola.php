@@ -47,7 +47,19 @@
 
         <?php endforeach ?>
 
-    </table><button> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>'>Gráfico</a></button>
+    </table><button> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>'>Gráfico</a></button>    
+    
+    <form method="get" action="dados_escola.php">
+
+    <select name="xpto">
+						<?php foreach($escola->link() as $data) : ?>
+						       <option  name="id" value="<?= $data["id"] ?>"><?= $data["nome"] ?></option>
+					  <?php endforeach ?>
+    </select>
+
+
+
+
   <div style="width: 400px; height: 400px;">
 	         <canvas class="line-chart" style="height: -300px; width: -100px;"></canvas>
 	         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
