@@ -26,10 +26,11 @@
   include "header.php";
   ?>
 
-  <section class="hero">
+  <section class="dados">
     <table class='table'>
       <?php foreach($escola->get($id) as $data) : ?>
       <th>Informações Escolares</th>
+      
       <tr name="id" value="<?= $data["id"] ?>">
         <td>Escola: <?= $data["nome"] ?> </td>
       <tr>
@@ -37,30 +38,37 @@
       </tr>
       <tr>
         <td>Cidade: <?= $data["cidade"] ?> </td>
+        </tr>
+        <td>Bairro:<?= $data["mapa"]?></td>
       <tr>
         <td>Cep: <?= $data["cep"] ?> </td>
+      </tr>
       <tr>
-        <td>Telefone: <?= $data["telefone"] ?> </td>
+        <td>Telefone: <?= $data["telefone"] ?> </td> 
+      </tr>
       <tr>
-        <td>Mapa: <iframe src="<?= $data["mapa"] ?>" width="" height="" frameborder="0" style="border:0;"
-            allowfullscreen=""> </iframe></td>
-
+            </tr>
         <?php endforeach ?>
+        </section>
 
-    </table><button> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>'>Gráfico</a></button>    
+        <section class="notas">
+
+    </table><button > <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>' id="buttom">Exibir dados</a></button>    
     
     <form method="get" action="dados_escola.php">
 
-    <select name="xpto">
+    <select name="xpto" id="sel">
 						<?php foreach($escola->link() as $data) : ?>
 						       <option  name="id" value="<?= $data["id"] ?>"><?= $data["nome"] ?></option>
 					  <?php endforeach ?>
     </select>
 
+</section>
 
 
 
-  <div style="width: 400px; height: 400px;">
+<section class="mapa">
+  <div style="width: 1200px; height: 400px; margin-top: 70px;">
 	         <canvas class="line-chart" style="height: -300px; width: -100px;"></canvas>
 	         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
             <?php
@@ -104,6 +112,10 @@
          </script>
          </div>
          </select>
+
+         </section>
+
+         <section class="mapa2">
          <div style="width: 300px; height: 300px;">
          <canvas class="radar-chart" width="2" height="2"></canvas>
          <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
@@ -165,12 +177,14 @@
 
 
         </div>
+
+      
         <textarea placeholder="Comentários" name="comment" required=""></textarea>
         <input type="submit" id="enviarEmail" name="" value="enviar">
       </form>
     </div>
-  </section>
-  <section class="galeria">
+  
+
     <?php foreach($comment->Link($id) as $dados) : ?>
       <ul>
         <li>
@@ -182,7 +196,6 @@
 
       </ul>
     <?php endforeach ?>
-  </section>
 </body>
 
 </html>
@@ -191,3 +204,6 @@
     print_r(json_encode($notas->Selec($id)));
   ?>
 </pre>
+
+</body>
+</html>
