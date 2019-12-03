@@ -48,6 +48,11 @@ header("location:login.php?msg=Logue-se para cadastrar uma escola!");
 	</div> 
 		
 	<div class="meio">
+	<input type="text" name="mapa" required=" " >
+	<label>Bairro</label>
+	</div> 
+
+	<div class="meio">
 	<input type="text" name="cep" required=" " >
 	<label>Cep</label>
 	</div> 
@@ -59,10 +64,6 @@ header("location:login.php?msg=Logue-se para cadastrar uma escola!");
 	</div> 
 	
 	
-	<div class="meio">
-	<input type="text" name="mapa" required=" " >
-	<label>link do google maps</label>
-	</div> 
 	<input type="submit" name="" value="Entrar">
 	
 	</form>
