@@ -18,7 +18,7 @@
 
    public function link(){
    	$con = Connection::getConn();
-   	$consulta = $con->prepare("SELECT * FROM escolas");
+   	$consulta = $con->prepare("SELECT * FROM escolas ORDER BY nome");
 	$consulta->execute();
 	return $consulta->fetchAll();
    }
