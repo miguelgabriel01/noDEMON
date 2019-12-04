@@ -65,9 +65,6 @@ flex-direction: column;
 }
 
 
-
-
-
 @media(max-width: 700px){
 h1{
 font-size: 2.5rem;
@@ -82,11 +79,10 @@ font-size: 1.5rem;
 
 display: flex;
 width: 100%;
-height: 400px;
-border: 6px solid red;
+height: 350px;
 align-items: center;
 flex-direction: column;
-margin-top: 100px
+margin-top: 65px
 
 
 }
@@ -95,18 +91,15 @@ margin-top: 100px
 
 display: flex;
 width: 100%;
-height: 900px;
-border: 6px solid red;
+height: 600px;
+
 align-items: center;
 flex-direction: column;
-margin-top: 100px
-
-
+margin-top: 100px;
 
 }
 
 .mapa2{
-
 display: flex;
 width: 100%;
 height: 400px;
@@ -114,13 +107,9 @@ border: 6px solid red;
 align-items: center;
 flex-direction: column;
 margin-top: 100px
-
-
-
 }
+
 .duvidas{
-
-
 display: flex;
 width: 100%;
 height: 400px;
@@ -128,15 +117,11 @@ border: 6px solid red;
 align-items: center;
 flex-direction: column;
 margin-top: 100px
-
-
-
-
 }
+
+
 
 .comentar1{
-
-
 display: flex;
 width: 100%;
 height: 400px;
@@ -144,8 +129,6 @@ border: 6px solid red;
 align-items: center;
 flex-direction: column;
 margin-top: 100px
-
-
 }
 
 .galeria{
@@ -156,10 +139,7 @@ border: 6px solid red;
 align-items: center;
 flex-direction: column;
 margin-top: 100px
-
-
 }
-
 
 li {
   float: left;
@@ -170,8 +150,7 @@ li a {
   color: white;
   text-align: center;
   padding: 20px 40px 20px 40px;
-/*  border-radius: 10px;
-*/  text-decoration: none;
+  text-decoration: none;
   height: 65px;
 }
 
@@ -179,4 +158,60 @@ li a:hover{
   background-color: #F28A02;
     text-decoration: none;
 }
+
+.table{
+display:flex;
+border-collapse:collapse;
+font-family:arial,sans-serif;
+margin: 0 auto;
+justify-content:flex-start
+}
+td{
+text-align:center;
+padding:20px;
+font-size:22px;
+color:black;
+padding: 10px;
+}
+tr{
+text-align:center;
+font-size:30px;
+margin:20px;
+color:black;
+}
+.titulo{
+font-size: 40px;
+text-align: center;
+padding: 10px;
+
+
+
+}
+
+.tabe{
+width: 900px;
+height: 400px;
+display: flex;
+text-align: center;
+flex-direction: column;
+margin: 10px;
+padding: 10px;
+
+      
+        -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+        -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+        box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
