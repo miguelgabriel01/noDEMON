@@ -45,7 +45,11 @@ include "model/Escolas.php";
 
 
 </section>
+<section class="foot">
+<h1 id='desenvolvedores'>Desenvolvedores</h1>
 
+
+</section>
 
 </body>
 </html>
