@@ -27,49 +27,58 @@
   ?>
 
   <section class="dados">
-    <table class='table'>
+    <div class="tabe">
+  
       <?php foreach($escola->get($id) as $data) : ?>
-      <th>Informações Escolares</th>
-      
+       <h1 class="titulo"> <?= $data["nome"] ?> </h1>
+
+
+<table class="tabela" >
+ 
+ <tr>
+ <th>Cidade</th>
+ <th>Bairro</th>
+ <th>Endereço</th>
+ <th>Cep</th>
+ <th>Telefone</th>
+ 
+
+ </tr>
+
+
       <tr name="id" value="<?= $data["id"] ?>">
-        <td>Escola: <?= $data["nome"] ?> </td>
-      <tr>
-        <td>Endereço: <?= $data["endereco"] ?> </td>
+      
+        <td><?= $data["cidade"] ?> </td>
+   
+        <td><?= $data["mapa"]?></td>
+   
+        <td><?= $data["endereco"] ?> </td>
+
+        <td><?= $data["cep"] ?> </td>
+  
+
+        <td><?= $data["telefone"] ?> </td> 
       </tr>
-      <tr>
-        <td>Cidade: <?= $data["cidade"] ?> </td>
-        </tr>
-        <td>Bairro:<?= $data["mapa"]?></td>
-      <tr>
-        <td>Cep: <?= $data["cep"] ?> </td>
-      </tr>
-      <tr>
-        <td>Telefone: <?= $data["telefone"] ?> </td> 
-      </tr>
-      <tr>
-            </tr>
+    </table>
+</div>
+        
         <?php endforeach ?>
         </section>
 
         <section class="notas">
 
-    </table><button > <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>' id="buttom">Exibir dados</a></button>    
+  <button > <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>' id="buttom">Exibir dados</a></button>    
     
     <form method="get" action="dados_escola.php">
 
-    <select name="xpto" id="sel">
-						<?php foreach($escola->link() as $data) : ?>
-						       <option  name="id" value="<?= $data["id"] ?>"><?= $data["nome"] ?></option>
-					  <?php endforeach ?>
-    </select>
-
+   
 </section>
 
 
 
 <section class="mapa">
-  <div style="width: 1200px; height: 400px; margin-top: 70px;">
-	         <canvas class="line-chart" style="height: -300px; width: -100px;"></canvas>
+  <div style="width:1000px; height: 400px; margin-top: 50px;">
+	         <canvas class="line-chart"></canvas>
 	         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
             <?php
               $not = json_encode($notas->Selec($id));
@@ -94,7 +103,7 @@
 	                        label:'Média no Enem nos ultimos anos!',
 	                        data: notasEnem,
 	                        borderColor: 'green',
-	                        borderWidth: '2'
+	                        borderWidth: '5'
 	                     }]
 	                  },
 	            	options: {
@@ -153,7 +162,7 @@
 
   <section class="duvidas">
     <div class="principal">
-      <h2>Dúvidas</h2>
+      <h2>Comentários</h2>
       <form method="POST" action="../controller/cadastrar_comentario.php">
         <div class="meio">
           <input type="hidden" name="id" required="" value="<?= $_SESSION["logado"]["id"] ?>">
@@ -198,12 +207,4 @@
     <?php endforeach ?>
 </body>
 
-</html>
-<pre>
-  <?php
-    print_r(json_encode($notas->Selec($id)));
-  ?>
-</pre>
-
-</body>
 </html>
