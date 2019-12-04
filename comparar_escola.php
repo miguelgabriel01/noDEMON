@@ -20,18 +20,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Comparar Escolas</title>
+  <link rel="stylesheet" type="text/css" href="css/comparar_escolas.css">
+
 </head>
 
 <body>
   <?php
   include "header.php";
   ?>
-	<form method="get" action="comparar_escola.php">
 
+  <h1 id="titulo">Comparar escolas</h1>
+	<form method="get" action="comparar_escola.php">
+<section class="select">
   <select name="xpto">
 	  <?php foreach($escola->link() as $data) : ?>
 		  <option  name="id" value="<?= $data["id"] ?>"><?= $data["nome"] ?></option>
-  	<?php endforeach ?>
+    <?php endforeach ?>
+    
   </select>
   
 	<select name="xpto2">
@@ -40,14 +45,12 @@
     <?php endforeach ?>
 	</select>
 
-	<b>	<input type="submit" class="" value="Pesquisar"></b>
+	<b>	<input type="submit" class="" value="Comparar"></b>
 	</form>
-
-  <script>
-  </script>
+    </section>
 
 <section class="mapa">
-  <div style="width: 400px; height: 400px; margin-top: 70px;">
+  <div style="width: 600px; height: 600px; margin-top: 70px;">
 	         <canvas class="line-chart2" style="height: -300px; width: -100px;"></canvas>
 	         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
             <?php
@@ -92,8 +95,7 @@
          </select>
 
 
-         <section class="mapa">
-  <div style="width: 400px; height: 400px; margin-top: 70px;">
+         <div style="width: 600px; height: 600px; margin-top: 70px;">
 	         <canvas class="line-chart32" style="height: -300px; width: -100px;"></canvas>
 	         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
             <?php
@@ -138,10 +140,10 @@
          </div>
          </select>
 
-
+            </section>
 
 <section class="mapa2">
-  <div style="width: 300px; height: 300px;">
+  <div style="width: 500px; height: 500px;">
       <canvas class="radar-chart" width="2" height="2"></canvas>
       <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
       <script>
@@ -175,10 +177,8 @@
         });
     </script>           
   </div>
-  </section>
 
-  <section class="mapa2">
-  <div style="width: 300px; height: 300px;">
+  <div style="width: 500px; height: 500px;">
       <canvas class="radar-chartr" width="2" height="2"></canvas>
       <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
       <script>
@@ -211,6 +211,7 @@
     </script>           
   </div>
   </section>
-</body>
 
+  <section class="foot"></section>
+</body>
 </html>
