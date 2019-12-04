@@ -67,7 +67,7 @@
 
         <section class="notas">
 
-  <button > <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>' id="buttom">Exibir dados</a></button>    
+  <button id="buttom"> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>' >Exibir dados</a></button>    
     
     <form method="get" action="dados_escola.php">
 
@@ -77,7 +77,7 @@
 
 
 <section class="mapa">
-  <div style="width:1000px; height: 400px; margin-top: 50px;">
+  <div style="width:800px; height: 400px; margin-top: 50px;">
 	         <canvas class="line-chart"></canvas>
 	         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
             <?php
@@ -125,7 +125,7 @@
          </section>
 
          <section class="mapa2">
-         <div style="width: 300px; height: 300px;">
+         <div style="width: 500px; height: 500px;">
          <canvas class="radar-chart" width="2" height="2"></canvas>
          <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
          <script>
