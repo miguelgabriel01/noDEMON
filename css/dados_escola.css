@@ -17,6 +17,7 @@ color: #FFF;
 cursor: pointer;
 opacity: 0.9;
 font-size: 20px;
+
 }
 
 a:hover{
@@ -102,11 +103,10 @@ margin-top: 100px;
 .mapa2{
 display: flex;
 width: 100%;
-height: 400px;
-border: 6px solid red;
+height: 700px;
 align-items: center;
 flex-direction: column;
-margin-top: 100px
+margin-top: 20px;
 }
 
 .duvidas{
@@ -202,6 +202,14 @@ padding: 10px;
         -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
         box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
     }
+
+
+#buttom{
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 100px;  
+  background: green;
 }
 
 
