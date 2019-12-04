@@ -1,0 +1,154 @@
+
+*{
+margin: 0;
+padding: 0;
+font-size: 100%;
+box-sizing: border-box;
+}
+
+nav,ul{
+list-style: none;
+transition: 3s;
+
+}
+
+a{
+text-decoration: none;
+color: #FFF;
+cursor: pointer;
+opacity: 0.9;
+font-size: 20px;
+
+}
+
+a:hover{
+opacity: 1;
+}
+
+
+header{
+background-color:rgba(0, 0, 0, .8) ;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 0px;
+height: 65px;
+}
+
+header nav{
+display: flex;
+}
+
+header li a{
+color: white;
+}
+           
+header li{
+margin: 0px;
+}
+
+header li:first-child{
+margin-left:0; 
+}
+
+header li:last-child{
+margin-right: 0;
+}
+
+@media(max-width: 700px){
+header{
+flex-direction: column;
+}
+
+}
+
+
+@media(max-width: 700px){
+h1{
+font-size: 2.5rem;
+}
+h3 h4{
+font-size: 1.5rem;
+}
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 40px 20px 40px;
+  text-decoration: none;
+  height: 65px;
+}
+
+li a:hover{
+  background-color: #F28A02;
+    text-decoration: none;
+}
+
+
+.select{
+display: flex;
+width: 100%;
+height: 50px;
+margin-top: 50px;
+align-items: center;
+align-content: center;
+flex-direction: row;
+justify-content: center;
+
+
+
+}
+
+#titulo{
+
+color: black;
+font-size: 40px;
+text-align: center;
+margin-top: 80px;
+
+
+
+}
+
+
+.mapa{
+display: flex;
+width: 100%;
+height: 600px;
+align-items: center;
+justify-content: space-around;
+
+
+}
+
+
+.mapa2{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+    }
+    
+    .foot{
+
+        display: flex;
+        width: 100%;
+        height: 100px;
+background: black;
+
+
+    }
