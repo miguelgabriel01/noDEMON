@@ -19,6 +19,12 @@
 	<h2>Cadastrar Escolas</h2>
 
 	<form action="../controller/cadastrar_notas.php" method="POST">
+
+	<div class="meio">
+	<input type="text" name="ano" required=" " >
+	<label>Ano</label>
+	</div>
+
 	<div class="meio">
 	<input type="text" name="nota_port" maxlength="3" min="0" max="1000" required=" " >
 	<label>Nota Português e Suas Tecnologias</label>
@@ -50,13 +56,8 @@
 	</div>
 
 	<div class="meio">
-	<input type="text" name="ano" required=" " >
-	<label>Ano</label>
-	<input type="submit" name="" value="Entrar">
-	</div>
-
-	<div class="meio">
 	<input type="hidden" name="id_escolas" value="<?=$_GET["id"]?>" required="">
+	<input type="submit" name="" value="Entrar">
 	</div>
 
 	</form>
