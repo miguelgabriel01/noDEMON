@@ -11,6 +11,16 @@ header("location:login.php?msg=Logue-se para cadastrar uma escola!");
 <meta charset="UTF-8">
 <title>login</title>
 <link rel="stylesheet" type="text/css" href="../css/login.css">
+  
+  <script src="../view/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="../view/jquery.mask.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+   
+    $(document).ready(function(){
+      $("#telefone").mask("(00) 00000-0000");
+      $("#cep").mask("00.000-000");
+    })	
+  </script>
 </head>
 <body>	
 <?php 
@@ -53,18 +63,18 @@ header("location:login.php?msg=Logue-se para cadastrar uma escola!");
 	</div> 
 
 	<div class="meio">
-	<input type="text" name="cep" required=" " >
+	<input type="text" name="cep" id="telefone" required=" " >
 	<label>Cep</label>
 	</div> 
 	
 	
 	<div class="meio">
-	<input type="text" name="telefone" required=" " >
+	<input type="text" name="telefone" id="telefone" required="" >
 	<label>Telefone</label>
 	</div> 
 	
 	
-	<input type="submit" name="" value="Entrar">
+	<input type="submit" name="" value="Cadastrar">
 	
 	</form>
 	
