@@ -71,10 +71,10 @@ header("location:login.php?msg=Logue-se para cadastrar uma escola!");
 	<div class="meio">
 	<input type="text" name="telefone" id="telefone" required="" >
 	<label>Telefone</label>
+	<input type="submit" name="" value="Cadastrar">
 	</div> 
 	
 	
-	<input type="submit" name="" value="Cadastrar">
 	
 	</form>
 	
