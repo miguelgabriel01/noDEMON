@@ -19,8 +19,8 @@ create database if not exists SNRC;
 			nome VARCHAR(50) NOT NULL,
 			endereco VARCHAR(50) NOT NULL,
 			cidade VARCHAR(30) NOT NULL,
-			cep VARCHAR(8) NOT NULL,
-			telefone VARCHAR(10) NOT NULL,
+			cep VARCHAR(20) NOT NULL,
+			telefone VARCHAR(20) NOT NULL,
 			mapa VARCHAR(5000) NOT NULL
 	);
 
