@@ -67,7 +67,7 @@
 
         <section class="notas">
 
-  <button id="buttom"> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>' >Exibir dados</a></button>    
+  <button id="buttom"> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>' >CADASTRAR NOTAS</a></button>    
     
     <form method="get" action="dados_escola.php">
 
@@ -158,6 +158,10 @@
             </script>           
          </div>
 
+         </div>
+        <div class="meio">
+        <button id="buttom"><a href="comparar_escola.php">Comparar Notas</a></button>
+
   </section>
 
   <section class="duvidas">
@@ -168,9 +172,6 @@
           <input type="hidden" name="id" required="" value="<?= $_SESSION["logado"]["id"] ?>">
           <input type="hidden" name="nome" required="" value="<?= $_SESSION["logado"]["nome"] ?>">
           <input type="hidden" name="id_escola" required="" value="<?= $id ?>">
-        </div>
-        <div class="meio">
-
 
           <?php
         if(!isset($_SESSION['logado'])) :?>
