@@ -49,7 +49,7 @@
        
        
     
-        <input type="submit" name="" value="Enviar">
+        <input type="submit" name="" value="Cadastrar">
      </form>
        
 </div>
