@@ -21,7 +21,7 @@ include "model/Escolas.php";
 <section class="imgP">
 
 
-	<h1>Bem vindo ao SNRC</h1>
+	<h1>Bem vindo ao SCCN</h1>
 
 	<?php if(isset($_GET['msg'])) :?>
 		<h1><?= $_GET['msg'] ?> </h1>

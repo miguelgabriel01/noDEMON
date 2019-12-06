@@ -1,14 +1,16 @@
-# noDEMON
-projeto dos alunos de segundo periodo de I.P.I
+#noDEMON
 
-sistema de busca de escolas da região 
-alunos:
--mguel gabriel
--bruno mm
--thierry matheus
--khevin aeroporto
--patrick santana
+Projeto dos alunos de segundo periodo de I.P.I 
 
-link do projeto no webhost:
+Sistema de cadastro e comparação de notas
 
-sistemapep.000webhostapp.com
+-Miguel Gabriel
+-Bruno Manoel
+-Thierry Matheus
+-Khevin Amorim	
+-Patrick Santana
+
+Link do projeto no webhost:
+
+sistemapepbr.000webhostapp.com
+

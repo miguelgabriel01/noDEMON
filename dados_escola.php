@@ -56,7 +56,6 @@
 
         <td><?= $data["cep"] ?> </td>
   
-
         <td><?= $data["telefone"] ?> </td> 
       </tr>
     </table>

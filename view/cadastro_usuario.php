@@ -53,8 +53,8 @@
      </form>
        
 </div>
-  <h3 class="spone">SNRC</h3>
-  <h4 class="tone">Sistema de busca de Escolas da região</h4>
+  <h3 class="spone">SCCN</h3>
+  <h4 class="tone">Sistema de cadastro e comparação de notas</h4>
 
     
 	

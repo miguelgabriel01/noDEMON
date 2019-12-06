@@ -17,8 +17,8 @@ header("location:login.php?msg=Logue-se para cadastrar uma escola!");
   <script type="text/javascript">
    
     $(document).ready(function(){
-      $("#telefone").mask("(00) 00000-0000");
       $("#cep").mask("00.000-000");
+      $("#telefone").mask("(00) 00000-0000");
     })	
   </script>
 </head>
@@ -63,7 +63,7 @@ header("location:login.php?msg=Logue-se para cadastrar uma escola!");
 	</div> 
 
 	<div class="meio">
-	<input type="text" name="cep" id="telefone" required=" " >
+	<input type="text" name="cep" id="cep" required=" " >
 	<label>Cep</label>
 	</div> 
 	
