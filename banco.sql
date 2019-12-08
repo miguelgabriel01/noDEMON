@@ -21,7 +21,9 @@ create database if not exists SNRC;
 			cidade VARCHAR(30) NOT NULL,
 			cep VARCHAR(20) NOT NULL,
 			telefone VARCHAR(20) NOT NULL,
-			mapa VARCHAR(5000) NOT NULL
+			mapa VARCHAR(5000) NOT NULL,
+			lat float (20),
+			lot float (20)
 	);
 
 	CREATE TABLE notas(
