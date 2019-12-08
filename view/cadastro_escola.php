@@ -27,11 +27,7 @@ header("location:login.php?msg=Logue-se para cadastrar uma escola!");
   include "../header.php";
   ?>
 	<?php if(!isset($_GET["msg"])) :?>
-
-
-				<h2> <?= $_GET["msg"] ?> </h2>
-
-
+ 	<h2> <?= $_GET["msg"] ?> </h2>
 	<?php endif ?>
 
 
@@ -71,9 +67,18 @@ header("location:login.php?msg=Logue-se para cadastrar uma escola!");
 	<div class="meio">
 	<input type="text" name="telefone" id="telefone" required="" >
 	<label>Telefone</label>
-	<input type="submit" name="" value="Cadastrar">
 	</div> 
 	
+	<div class="meio">
+	<input type="text" name="lat" id="coord" required="" >
+	<label>Latitude</label>
+	</div> 
+
+	<div class="meio">
+	<input type="text" name="lot" id="coord" required="" >
+	<label>Longitude</label>
+	<input type="submit" name="" value="Cadastrar">
+	</div> 
 	
 	
 	</form>
