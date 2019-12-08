@@ -211,6 +211,11 @@ box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
   margin-top: 100px;  
   background: green;
 }
+#map{
+  height: 400px;
+  width: 400px;
+  align-content: center;
+}
 
 
 
