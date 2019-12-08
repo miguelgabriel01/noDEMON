@@ -64,16 +64,33 @@
         <?php endforeach ?>
         </section>
 
-        <section class="notas">
-
-  <button id="buttom"> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>' >CADASTRAR NOTAS</a></button>    
-    
-    <form method="get" action="dados_escola.php">
 
    
 </section>
+<section>
+  <h3>Localização</h3>
+  <div id="map"></div>
+  <script>
+  var lati = <?=$data["lat"]?>;
+  var long = <?=$data["lot"] ?>;
+  console.log(lati);
+  function initMap() {
+    var uluru = {lat: lati, lng: long};
+    var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+    var marker = new google.maps.Marker({
+      position: uluru, map: map});
+  }
+  </script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy_BoYMtuOPg56qqmooJ3fq1bX1TXKucw&callback=initMap">
+    </script>
+    </section>
+    <section class="notas">
 
-
+<button id="buttom"> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>' >CADASTRAR NOTAS</a></button>    
+  
+  <form method="get" action="dados_escola.php">
 
 <section class="mapa">
   <div style="width:800px; height: 400px; margin-top: 50px;">
@@ -128,14 +145,15 @@
          <canvas class="radar-chart" width="2" height="2"></canvas>
          <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
          <script>
-
+	         	var cor = ['red', 'green', 'blue', 'orange', 'purple', 'gray', 'brown', 'yellow', 'aqua', 'darkgreen', 'salmon', 'gold'];
+	         	var cor2 = cor[Math.floor(Math.random()*cor.length)];
             var materia_notas = <?= json_encode($notas->Selec($id)); ?>;
             console.log(materia_notas);
             const notas22 = materia_notas.map(item => {
               return {
                 label: `Ano ${item.ano}`,
                 data: [item.nota_ce, item.nota_ch, item.nota_mat, item.nota_port, item.nota_red],
-                borderColor: "green"
+                borderColor: cor2
               }
             })
             var ctx = document.getElementsByClassName("radar-chart");
