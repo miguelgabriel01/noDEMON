@@ -5,27 +5,43 @@
       <meta name="viewport" content="width= device-width, initial-scale=1.0">
 
       <title>Gráficos de Escolas</title>
-   </head>
-   <body>
-      <div style="width: 500px; height: 500px;">
-         <canvas class="radar-chart" width="2" height="2"></canvas>
-         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-         <script>
-            var ctx = document.getElementsByClassName("radar-chart");
-            var chartGraph = new Chart(ctx, {
-               type: 'pie',
-               data: {
-                     labels:["Português","Redação","Humanas","Matemática","Exatas"],
-                     datasets: [{
-                        label:'Notas das matérias da escola no ultimo ENEM',
-                        data: [750,640,745,540,400],
-
-                        borderColor:"white",
-                        backgroundColor:['rgba(255, 255, 77, 0.5)','rgb(77, 255, 77, 0.5)','rgb(255, 51, 77, 0.5)','rgb(255, 102, 217, 0.5)','rgb(51, 102, 255, 0.5)'],
-                        }]
-                     },
-                  });
-            </script>           
-         </div>
+<style type="text/css">
+</style>
+</head>
+      <body>
+    	<div style="width: 50%; height: 50%;">   	
+	         <canvas class="line-chart"></canvas>
+	         <script src="chart.js@2.8.0"></script>
+	         <script>
+	         	var cor = ['red', 'green', 'blue', 'orange', 'purple', 'gray', 'brown', 'yellow', 'aqua', 'darkgreen', 'salmon', 'gold'];
+	         	var cor2 = cor[Math.floor(Math.random()*cor.length)];
+	         	var notas = ['542','485','901','700'];	            
+	         	var ctx = document.getElementsByClassName("line-chart");
+	            var chartGraph = new Chart(ctx, {
+	                  type: 'line',
+	                  data: {
+	                     labels:["português","Matemática","Redação","Biologia"],
+	                     datasets: [{
+	                        label:'Média no Enem nos ultimos anos!',
+	                        data: notas,
+	                        borderColor: cor2,
+	                        borderWidth: '2'
+	                     }]
+	                  },
+	            	options: {
+	            		scales: {  
+	            			yAxes: [
+	            				{ 
+	            					ticks: {
+	            						beginAtZero: true
+	            					}
+	            				}
+	            			]
+	            		}
+	            	}
+	            });
+         </script> 
+         </div>          
       </body>
+   </head>           
 </html>
