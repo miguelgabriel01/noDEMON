@@ -1,7 +1,7 @@
-drop database if exists SNRC;
-create database if not exists SNRC;
+drop database if exists SCCN;
+create database if not exists SCCN;
 
-	use SNRC;
+	use SCCN;
 
 	CREATE TABLE usuario(
 			id INT AUTO_INCREMENT PRIMARY KEY,
