@@ -67,8 +67,8 @@
 
    
 </section>
-<section>
-  <h3>Localização</h3>
+<section class="MaeDeBruno">
+ 
   <div id="map"></div>
   <script>
   var lati = <?=$data["lat"]?>;
@@ -186,7 +186,7 @@
       <h2>Comentários</h2>
       <form method="POST" action="../controller/cadastrar_comentario.php">
         <div class="meio">
-          <input type="hidden" name="id" required="" value="<?= $_SESSION["logado"]["id"] ?>">
+          <input type="hidden" name="id" crequired="" value="<?= $_SESSION["logado"]["id"] ?>">
           <input type="hidden" name="nome" required="" value="<?= $_SESSION["logado"]["nome"] ?>">
           <input type="hidden" name="id_escola" required="" value="<?= $id ?>">
 
@@ -197,13 +197,7 @@
           <h1>Você precisa está logado para comentar.</h1>
 
 
-          <?php endif ?>
-
-
-
-
-
-        </div>
+          <?php endif ?>        </div>
 
       
         <textarea placeholder="Comentários" name="comment" required=""></textarea>
@@ -223,6 +217,7 @@
 
       </ul>
     <?php endforeach ?>
+    </section>
 </body>
 
 </html>
