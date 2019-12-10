@@ -88,9 +88,7 @@
     </section>
     <section class="notas">
 
-<button id="buttom"> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>' >CADASTRAR NOTAS</a></button>    
-  
-  
+<button id="buttom"> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>'>CADASTRAR NOTAS</a></button>    
 
 <section class="mapa">
   <div style="width:800px; height: 400px; margin-top: 50px;background-color:white" >
@@ -202,15 +200,15 @@
 
       
         <textarea placeholder="Comentários" name="comment" required=""></textarea>
-        <input type="submit" id="enviarEmail" name="" value="enviar">
+        <input type="submit" id="enviarEmail" name="" value="Enviar">
       </form>
     </div>
   
 
     <?php foreach($comment->Link($id) as $dados) : ?>
-      <ul>
+      <ul id="tt">
         <li>
-          <h1><?= $dados["nome"] ?></h1>
+          <h1><?= $dados["nome"] ?></h1><br>
           <p>
             <?= $dados["comment"] ?>
           </p>
