@@ -73,13 +73,13 @@ flex-direction: column;
 body{
 	background-image: url("https://images.pexels.com/photos/1448709/pexels-photo-1448709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
 
-/* font-family:sans-serif;
- background-size: cover;
- background: -webkit-linear-gradient(top left, #333, #f562);
- background: -moz-linear-gradient(top left, #333, #f666);
- background: -o-linear-gradient(top left, #333, #f666);
- background: linear-gradient(top left, #333, #f666);
-*/}
+ /*font-family:sans-serif;*/
+ /*background-size: 100vh;*/
+ /*background: -webkit-linear-gradient(top left, #333, #f562);*/
+ /*background: -moz-linear-gradient(top left, #333, #f666);*/
+ /*background: -o-linear-gradient(top left, #333, #f666);*/
+ /*background: linear-gradient(top left, #333, #f666);*/
+}
 .formulário .meio input:focus~label,
 .formulário .meio input:valid~label
 {
