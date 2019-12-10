@@ -93,7 +93,7 @@
   <form method="get" action="dados_escola.php">
 
 <section class="mapa">
-  <div style="width:800px; height: 400px; margin-top: 50px;">
+  <div style="width:800px; height: 400px; margin-top: 50px;background-color:white" >
 	         <canvas class="line-chart"></canvas>
 	         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
             <?php
@@ -119,7 +119,7 @@
 	                        label:'Média no Enem nos ultimos anos!',
 	                        data: notasEnem,
 	                        borderColor: 'green',
-	                        borderWidth: '5'
+	                        borderWidth: '4'
 	                     }]
 	                  },
 	            	options: {
@@ -141,11 +141,11 @@
          </section>
 
          <section class="mapa2">
-         <div style="width: 500px; height: 500px;">
+         <div style="width: 500px; height: 500px; background-color:white;">
          <canvas class="radar-chart" width="2" height="2"></canvas>
          <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
          <script>
-	         	var cor = ['red', 'green', 'blue', 'orange', 'purple', 'gray', 'brown', 'yellow', 'aqua', 'darkgreen', 'salmon', 'gold'];
+	         	var cor = ['green'];
 	         	var cor2 = cor[Math.floor(Math.random()*cor.length)];
             var materia_notas = <?= json_encode($notas->Selec($id)); ?>;
             console.log(materia_notas);
@@ -165,6 +165,7 @@
                      },
                      options: {
                          scale: {
+                          FontSize: 40,
                              ticks: {
                                  suggestedMin: 0,
                                  suggestedMax: 1000
