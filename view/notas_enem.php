@@ -21,43 +21,43 @@
 	<form action="../controller/cadastrar_notas.php" method="POST">
 
 	<div class="meio">
-	<input type="text" name="ano" required=" " >
+	<input type="number" name="ano" required="" maxlength="4" >
 	<label>Ano</label>
 	</div>
 
 	<div class="meio">
-	<input type="text" name="nota_port" maxlength="3" min="0" max="1000" required=" " >
+	<input type="number" name="nota_port" maxlength="4" min="0" max="1000" required=" " >
 	<label>Nota Português e Suas Tecnologias</label>
 	</div>
 
 	<div class="meio">
-	<input type="text" name="nota_mat" maxlength="3" min="0" max="1000" required=" " >
+	<input type="number" name="nota_mat" maxlength="4" min="0" max="1000" required=" " >
 	<label>Nota Matemática e Suas Tecnologias</label>
 	</div>
 
 	<div class="meio">
-	<input type="text" name="nota_red" maxlength="3" min="0" max="1000" required=" " >
+	<input type="number" name="nota_red" maxlength="4" min="0" max="1000" required=" " >
 	<label>Nota Redação</label>
 	</div>
 
 	<div class="meio">
-	<input type="text" name="nota_ch" maxlength="3" min="0" max="1000" required=" " >
+	<input type="number" name="nota_ch" maxlength="4" min="0" max="1000" required=" " >
 	<label>Nota Ciências Humanas e Suas Tecnologias</label>
 	</div>
 
 	<div class="meio">
-	<input type="text" name="nota_ce" maxlength="3" min="0" max="1000" required=" " >
+	<input type="number" name="nota_ce" maxlength="4" min="0" max="1000" required=" " >
 	<label>Nota Ciências Exatas e Suas Tecnologias</label>
 	</div>
 
 	<div class ="meio">
-	<input type="text" name="nota_enem" maxlength="3" min="0" max="1000" required=" " >
-	<label>Média da nota da escola!</label>	
+	<input type="number" name="nota_enem" maxlength="4" min="0" max="1000" required=" " >
+	<label>Média da nota da escola</label>	
 	</div>
 
 	<div class="meio">
 	<input type="hidden" name="id_escolas" value="<?=$_GET["id"]?>" required="">
-	<input type="submit" name="" value="Entrar">
+	<input type="submit" name="" value="Inserir">
 	</div>
 
 	</form>
