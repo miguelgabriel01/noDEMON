@@ -90,7 +90,7 @@
 
 <button id="buttom"> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>' >CADASTRAR NOTAS</a></button>    
   
-  <form method="get" action="dados_escola.php">
+  
 
 <section class="mapa">
   <div style="width:800px; height: 400px; margin-top: 50px;background-color:white" >
