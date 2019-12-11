@@ -68,8 +68,8 @@ flex-direction: column;
 
 
 .imgP{
-background-image: url("https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-color: #fff;
+/*background-image: url("https://images.unsplash.com/photo-1485322551133-3a4c27a9d925?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+*/color: #fff;
 text-align: center;
 background-size: cover;
 min-height: 100vh;
@@ -84,7 +84,7 @@ flex-direction: column
 font-size: 45px;
 margin-bottom: 15px;
 color: white;
-/*text-shadow: 2px 2px 8px #F28A02;*/
+text-shadow: 2px 2px 8px #000;
 }
 .imgP h3{
 font-size: 25px;
@@ -118,7 +118,7 @@ justify-content:center;
 
 
 .butao{
-  background:#F28A02;
+  background:rgba(0,0,0,0.7);
   /*border-radius: 4px;*/
   border: none;
   text-align: center;
@@ -130,19 +130,43 @@ justify-content:center;
  color:white;
  border:none; 
  justify-content:center;
+ border-radius: 4px;
+}
+.butao:hover{
+ background:#F28A02;
+  /*border-radius: 4px;*/
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 3%;
+  cursor: pointer;
+  margin: 5px;
+  /*transition: 3s;*/
+ color:white;
+ border:none; 
+ justify-content:center;
+ border-radius: 6px;
+
+}
+select::placeholder {
+  color: blue;
 }
 
 
 select{
-  background: #F7F7F7;
+  background: rgba(0,0,0,0.7);
   border-radius: 4px;
   border: none;
   text-align: center;
   width: 500px;
   height: 40px;
+  color:white;
+  text-transform: uppercase;
+  padding-left : 30px;
+
 
 }
-}
+
 
 li {
   float: left;
@@ -179,3 +203,35 @@ margin-top: 10px;
 
 }
 
+.vd{
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    overflow: hidden;
+}
+
+.vd_c{
+  height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+form {
+  position: relative;
+}
+
+form::before {
+  content: "lupa";
+  color: white;
+  display: inline-block;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

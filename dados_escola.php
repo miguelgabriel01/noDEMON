@@ -91,7 +91,7 @@
 <button id="buttom"> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>'>CADASTRAR NOTAS</a></button>    
 
 <section class="mapa">
-  <div style="width:800px; height: 400px; margin-top: 50px;background-color:white" >
+  <div style="width:800px; height: 400px; margin-top: 50px;background-color:transparent;" >
 	         <canvas class="line-chart"></canvas>
 	         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
             <?php
@@ -139,7 +139,7 @@
          </section>
 
          <section class="mapa2">
-         <div style="width: 500px; height: 500px; background-color:white;">
+         <div style="width: 500px; height: 500px; background-color:transparent;">
          <canvas class="radar-chart" width="2" height="2"></canvas>
          <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
          <script>

@@ -10,7 +10,6 @@ list-style: none;
 transition: 3s;
 
 }
-
 a{
 text-decoration: none;
 color: #FFF;
@@ -19,7 +18,8 @@ opacity: 0.9;
 font-size: 20px;
 
 }
-
+body{
+background: #efeeec;}
 a:hover{
 opacity: 1;
 }
@@ -158,8 +158,21 @@ li a:hover{
   background-color: #F28A02;
     text-decoration: none;
 }
+.tabe{
+  background: rgba(0,0,0,0.7);
+}
+h1.titulo{
+  color:white;
+  text-shadow: 2px 2px 8px #000;
+}
+th,td{
+  color:white;
+  text-shadow: 2px 2px 8px #000;
+
+}
 
 .table{
+border-radius: 3px;
 display:flex;
 border-collapse:collapse;
 font-family:arial,sans-serif;
@@ -170,7 +183,7 @@ td{
 text-align:center;
 padding:20px;
 font-size:22px;
-color:black;
+color:white;
 padding: 10px;
 }
 tr{
@@ -188,6 +201,7 @@ padding: 10px;
 }
 
 .tabe{
+background:rgba(0,0,0,0.8);
 width: 900px;
 height: 500px;
 display: flex;
@@ -197,8 +211,8 @@ margin: 20px;
 padding: 30px;   
 -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
 -moz-box-shadow:  9px 7px 5px rgba(50, 50, 50, 0.77);
-box-shadow:  0px 0px 1em rgba(5, 1, 10, 0.77);
-border: 1px solid gray;
+/*box-shadow:  0px 0px 1em rgba(5, 1, 10, 0.77);
+*/border: 1px solid gray;
 }
 
 
@@ -214,9 +228,8 @@ border: 1px solid gray;
   justify-content: center;
   align-content: center;
   align-items: center;
-  height: 600px;
-  width: 1200px;
- margin-left: 40px;
+  width: 900px;
+  height: 310px;
   align-content: center;
   margin-top: 50px;
 }
@@ -238,6 +251,7 @@ border: 1px solid gray;
   }*/
   
   .MaeDeBruno{
+    padding: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -250,4 +264,6 @@ border: 1px solid gray;
 ul li{
   color: #000;
 }
+
+
 

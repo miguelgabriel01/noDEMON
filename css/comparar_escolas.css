@@ -11,7 +11,9 @@ list-style: none;
 transition: 3s;
 
 }
-
+body{
+  background-color: #efeeec;
+}
 a{
 text-decoration: none;
 color: #FFF;
@@ -19,6 +21,11 @@ cursor: pointer;
 opacity: 0.9;
 font-size: 20px;
 
+}
+h1{
+  color:white;
+  text-shadow: 2px 2px 8px #000;
+}
 }
 
 a:hover{
@@ -112,7 +119,7 @@ justify-content: center;
 
 #titulo{
 
-color: black;
+color: white;
 font-size: 40px;
 text-align: center;
 margin-top: 80px;
