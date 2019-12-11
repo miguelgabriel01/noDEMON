@@ -60,11 +60,23 @@
 
 
           <?php endforeach ?>
+          <?php
+              $not2 = json_encode($notas->Selec($id2));
+            ?>
+           <?php foreach($notas->Selec($id) as $nota) : ?>
+
+
+          <?php endforeach ?>
+
           <script>
 
             var notas = <?= $not ?>;
+            var notas2 = <?= $not2 ?>;
             const notasEnem2 = notas.map(item => item.nota_enem);
+            const notasEnem = notas2.map(item => item.nota_enem);
             const ano2 = notas.map(item => item.ano);
+            const ano = notas.map(item => item.ano);
+
             var ctx = document.getElementsByClassName("line-chart2");
 
 	            var chartGraph = new Chart(ctx, {
@@ -72,11 +84,17 @@
 	                  data: {
 	                     labels: ano2.sort(),
 	                     datasets: [{
-	                        label:'Média no Enem nos ultimos anos!',
+	                        label:'Média da Primeira Escola',
 	                        data: notasEnem2,
 	                        borderColor: 'blue',
 	                        borderWidth: '2'
-	                     }]
+	                     },
+                       {
+                        label:'Média da Segunda Escola',
+                        data: notasEnem,
+                        borderColor:'green',
+                        borderWidth:'2'
+                       }]
 	                  },
 	            	options: {
 	            		scales: {
@@ -95,49 +113,6 @@
          </select>
 
 
-         <div style="width: 600px; height: 600px; margin-top: 70px;">
-	         <canvas class="line-chart32" style="height: -300px; width: -100px;"></canvas>
-	         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-            <?php
-              $not = json_encode($notas->Selec($id2));
-            ?>
-           <?php foreach($notas->Selec($id) as $nota) : ?>
-
-
-          <?php endforeach ?>
-          <script>
-
-            var notas = <?= $not ?>;
-            const notasEnem = notas.map(item => item.nota_enem);
-            const ano = notas.map(item => item.ano);
-            console.log(ano);
-            var ctx = document.getElementsByClassName("line-chart32");
-
-	            var chartGraph = new Chart(ctx, {
-	                  type: 'line',
-	                  data: {
-	                     labels: ano.sort(),
-	                     datasets: [{
-	                        label:'Média no Enem nos ultimos anos!',
-	                        data: notasEnem,
-	                        borderColor: 'green',
-	                        borderWidth: '2'
-	                     }]
-	                  },
-	            	options: {
-	            		scales: {
-	            			yAxes: [
-	            				{
-	            					ticks: {
-	            						beginAtZero: true
-	            					}
-	            				}
-	            			]
-	            		}
-	            	}
-	            });
-         </script>
-         </div>
          </select>
 
             </section>
