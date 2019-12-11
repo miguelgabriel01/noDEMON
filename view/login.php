@@ -49,7 +49,7 @@ require_once "../config/conexao.php";
 	</form>
 </section>
 
-<h3 class="spone">Radar Escola</h3>
+<h3 class="spone">Radar Escolar</h3>
   <h4 class="tone">Visibilidade,transparência e comparação entre escolas.</h4>
 
 

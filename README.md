@@ -1,16 +1,15 @@
 #noDEMON
 
-Projeto dos alunos de segundo periodo de I.P.I 
+Projeto dos alunos de segundo periodo de I.P.I
 
-Sistema de cadastro e comparação de notas
+Sistema de visualização e comparação de notas
 
 -Miguel Gabriel
 -Bruno Manoel
 -Thierry Matheus
--Khevin Amorim	
+-Khevin Amorim
 -Patrick Santana
 
 Link do projeto no webhost:
 
-sistemapepbr.000webhostapp.com
-
+https://nodemon2019.herokuapp.com/
