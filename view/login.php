@@ -9,9 +9,11 @@ require_once "../config/conexao.php";
 <meta charset="UTF-8">
 <title>login</title>
 <link rel="stylesheet" type="text/css" href="../css/login.css">
+<link href="https://fonts.googleapis.com/css?family=GFS+Didot&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<?php 
+<?php
   include "../header.php";
   ?>
 
@@ -46,6 +48,9 @@ require_once "../config/conexao.php";
 	<input type="submit" name="" value="Entrar">
 	</form>
 </section>
+
+<h3 class="spone">Radar Escola</h3>
+  <h4 class="tone">Visibilidade,transparência e comparação entre escolas.</h4>
 
 
 

@@ -1,9 +1,9 @@
-<?php 
+<?php
 	session_start();
-	
+
 ?>
 <header>
-	<a href="../index.php" style='padding-left: 20px;'>SCCN</a>
+	<a href="../index.php" style='padding-left: 20px;'>RadEsc</a>
 	<nav>
 <!-- 		<li><a href="../index.php">Inicio</a></li>
  -->		<li><a href="../view/cadastro_escola.php">Cadastrar Escolas</a></li>

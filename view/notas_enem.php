@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <title>login</title>
 <link rel="stylesheet" type="text/css" href="../css/login.css">
+<link href="https://fonts.googleapis.com/css?family=GFS+Didot&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <?php
@@ -52,7 +54,7 @@
 
 	<div class ="meio">
 	<input type="number" name="nota_enem" maxlength="4" min="0" max="1000" required=" " >
-	<label>Média da nota da escola</label>	
+	<label>Média da nota da escola</label>
 	</div>
 
 	<div class="meio">

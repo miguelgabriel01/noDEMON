@@ -3,6 +3,8 @@ margin: 0;
 padding: 0;
 font-size: 100%;
 box-sizing: border-box;
+font-family: 'GFS Didot', serif;
+
 
 }
 
@@ -46,13 +48,13 @@ display: flex;
 header li a{
 color: white;
 }
-           
+
 header li{
 margin: 0 15px;
 }
 
 header li:first-child{
-margin-left:0; 
+margin-left:0;
 }
 
 header li:last-child{

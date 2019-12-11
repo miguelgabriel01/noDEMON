@@ -1,11 +1,10 @@
+
 *{
 margin: 0;
 padding: 0;
 font-size: 100%;
 box-sizing: border-box;
-font-family: sans-serif;
-
-
+font-family: 'GFS Didot', serif;
 }
 
 /*menu*/
@@ -49,13 +48,13 @@ display: flex;
 header li a{
 color: white;
 }
-           
+
 header li{
 margin: 0px;
 }
 
 header li:first-child{
-margin-left:0; 
+margin-left:0;
 }
 
 header li:last-child{
@@ -188,13 +187,13 @@ input[type="submit"]:hover{
 }
 
 .spone{
-font-size: 120px;
+font-size: 90px;
 margin-top: 430px;
 margin-right: 10px;
 margin-left: 25px;
 color:#fff;
 font-family: sans-serif;
-text-shadow:6px 6px 6px #165E63;
+text-shadow:6px 6px 6px #000;
 }
 
 .tone{
@@ -204,4 +203,17 @@ text-shadow:6px 6px 6px #165E63;
 	margin-top: 15px;
 	color:#fff;
 	font-family: sans-serif;
+	text-shadow:6px 6px 6px #000;
+}
+
+.cad{
+	background: transparent;
+border: none;
+outline: none;
+color:#fff;
+background:#03a9f4;
+/*padding:10px 118px;*/
+cursor: pointer;
+border-radius:12px;*/
+
 }

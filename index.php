@@ -11,9 +11,14 @@ include "model/Escolas.php";
 <meta charset="UTF-8">
 <title>index</title>
 <link rel="stylesheet" type="text/css" href="css/index.css">
+ <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+<link href="https://fonts.googleapis.com/css?family=GFS+Didot&display=swap" rel="stylesheet">
 </head>
 <body>
-<?php 
+
+
+
+<?php
   include "header.php";
 ?>
 
@@ -27,7 +32,7 @@ include "model/Escolas.php";
 </div>
 
 
-	<h1>Bem vindo ao SCCN</h1>
+	<h1>Bem vindo ao Radar Escolar</h1>
 
 	<?php if(isset($_GET['msg'])) :?>
 		<h1><?= $_GET['msg'] ?> </h1>

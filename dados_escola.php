@@ -28,47 +28,47 @@
 
   <section class="dados">
     <div class="tabe">
-  
+
       <?php foreach($escola->get($id) as $data) : ?>
        <h1 class="titulo"> <?= $data["nome"] ?> </h1>
 
 
 <table class="tabela" >
- 
+
  <tr>
  <th>Cidade</th>
  <th>Bairro</th>
  <th>Endereço</th>
  <th>Cep</th>
  <th>Telefone</th>
- 
+
 
  </tr>
 
 
       <tr name="id" value="<?= $data["id"] ?>">
-      
+
         <td><?= $data["cidade"] ?> </td>
-   
+
         <td><?= $data["mapa"]?></td>
-   
+
         <td><?= $data["endereco"] ?> </td>
 
         <td><?= $data["cep"] ?> </td>
-  
-        <td><?= $data["telefone"] ?> </td> 
+
+        <td><?= $data["telefone"] ?> </td>
       </tr>
     </table>
 </div>
-        
+
         <?php endforeach ?>
         </section>
 
 
-   
+
 </section>
 <section class="MaeDeBruno">
- 
+
   <div id="map"></div>
   <script>
   var lati = <?=$data["lat"]?>;
@@ -88,7 +88,7 @@
     </section>
     <section class="notas">
 
-<button id="buttom"> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>'>CADASTRAR NOTAS</a></button>    
+<button id="buttom"> <a href='view/notas_enem.php?id=<?=$_GET["xpto"]?>'>CADASTRAR NOTAS</a></button>
 
 <section class="mapa">
   <div style="width:800px; height: 400px; margin-top: 50px;background-color:transparent;" >
@@ -171,7 +171,7 @@
                          }
                      }
                   });
-            </script>           
+            </script>
          </div>
 
          </div>
@@ -198,13 +198,11 @@
 
           <?php endif ?>        </div>
 
-      
+
         <textarea placeholder="Comentários" name="comment" required=""></textarea>
         <input type="submit" id="enviarEmail" name="" value="Enviar">
       </form>
     </div>
-  
-
     <?php foreach($comment->Link($id) as $dados) : ?>
       <ul id="tt">
         <li>

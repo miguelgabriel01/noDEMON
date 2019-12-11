@@ -1,16 +1,15 @@
+
 *{
 margin: 0;
 padding: 0;
 font-size: 100%;
 box-sizing: border-box;
-font-family: sans-serif;
-
-
+font-family: 'GFS Didot', serif;
 
 }
 body{
 	background-image: url("https://images.pexels.com/photos/6357/coffee-cup-desk-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-	
+
 }
 
 /*menu*/
@@ -18,6 +17,26 @@ body{
 nav,ul{
 list-style: none;
 transition: 3s;
+
+}
+.spone{
+font-size: 90px;
+margin-top: 430px;
+margin-right: 10px;
+margin-left: 25px;
+color:#fff;
+font-family: sans-serif;
+text-shadow:6px 6px 6px #000;
+}
+
+.tone{
+  font-size: 21px;
+  margin-left: 30px;
+  margin-right: 5px;
+  margin-top: 15px;
+  color:#fff;
+  font-family: sans-serif;
+  text-shadow:6px 6px 6px #000;
 
 }
 
@@ -55,14 +74,14 @@ header li a{
 color: white;
 
 }
-           
+
 header li{
 margin: 0px;
 
 }
 
 header li:first-child{
-margin-left:0; 
+margin-left:0;
 }
 
 header li:last-child{

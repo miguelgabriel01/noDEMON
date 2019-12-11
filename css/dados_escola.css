@@ -1,8 +1,10 @@
+
 *{
 margin: 0;
 padding: 0;
 font-size: 100%;
 box-sizing: border-box;
+font-family: 'GFS Didot', serif;
 }
 
 nav,ul{
@@ -45,13 +47,13 @@ display: flex;
 header li a{
 color: white;
 }
-           
+
 header li{
 margin: 0px;
 }
 
 header li:first-child{
-margin-left:0; 
+margin-left:0;
 }
 
 header li:last-child{
@@ -208,7 +210,7 @@ display: flex;
 text-align: center;
 flex-direction: column;
 margin: 20px;
-padding: 30px;   
+padding: 30px;
 -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
 -moz-box-shadow:  9px 7px 5px rgba(50, 50, 50, 0.77);
 /*box-shadow:  0px 0px 1em rgba(5, 1, 10, 0.77);
@@ -220,7 +222,7 @@ padding: 30px;
   display: block;
   margin: 0 auto;
   padding: 10px;
-  margin-top: 100px;  
+  margin-top: 100px;
   background: green;
 }
 #map{
@@ -241,15 +243,15 @@ padding: 30px;
   width: 100%;
   height: 300px;
   color: white;
-  background:gray;
+  background:;
   font-size: 30px;
   padding: 10px;
   }
-  
+
  /* #comentar{
   background: pink;
   }*/
-  
+
   .MaeDeBruno{
     padding: 120px;
     display: flex;
