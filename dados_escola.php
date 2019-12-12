@@ -178,7 +178,7 @@
         <div class="meio">
         <button id="buttom"><a href="comparar_escola.php">Comparar Notas</a></button>
 
-  </section>
+<!--   </section>
 
   <section class="duvidas">
     <div class="principal">
@@ -191,7 +191,7 @@
 <!-- 
           <?php
         if(!isset($_SESSION['logado'])) :?>
-
+ -->
 
           <h1>Você precisa está logado para comentar.</h1>
 
