@@ -55,10 +55,7 @@
             <?php
               $not = json_encode($notas->Selec($id));
             ?>
-           <?php foreach($notas->Selec($id) as $nota) : ?>
-
-
-          <?php endforeach ?>
+ <?php endforeach ?>
           <?php
               $not2 = json_encode($notas->Selec($id2));
             ?>
@@ -68,85 +65,34 @@
           <?php endforeach ?>
 
           <script>
-<<<<<<< HEAD
-=======
-
->>>>>>> a74eea2dd4542373f26647263b53a7f1b2a275c9
             var notas = <?= $not ?>;
             var notas2 = <?= $not2 ?>;
             const notasEnem2 = notas.map(item => item.nota_enem);
             const notasEnem = notas2.map(item => item.nota_enem);
             const ano2 = notas.map(item => item.ano);
             const ano = notas.map(item => item.ano);
-<<<<<<< HEAD
             var ctx = document.getElementsByClassName("line-chart2");
-              var chartGraph = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                       labels: ano2.sort(),
-                       datasets: [{
-                          label:'Média da Primeira Escola',
-                          data: notasEnem2,
-                          borderColor: 'blue',
-                          borderWidth: '2'
-                       },
-=======
-
-            var ctx = document.getElementsByClassName("line-chart2");
-
 	            var chartGraph = new Chart(ctx, {
 	                  type: 'line',
 	                  data: {
 	                     labels: ano2.sort(),
 	                     datasets: [{
+	                        label:'Média no Enem nos ultimos anos!',
 	                        label:'Média da Primeira Escola',
 	                        data: notasEnem2,
 	                        borderColor: 'blue',
 	                        borderWidth: '2'
+	                     }]
 	                     },
->>>>>>> a74eea2dd4542373f26647263b53a7f1b2a275c9
                        {
                         label:'Média da Segunda Escola',
                         data: notasEnem,
                         borderColor:'green',
                         borderWidth:'2'
                        }]
-<<<<<<< HEAD
-                    },
-                options: {
-                  scales: {
-                    yAxes: [
-                      {
-                        ticks: {
-                          beginAtZero: true
-                        }
-                      }
-                    ]
-                  }
-                }
-              });
-         </script>
-         </div>
-=======
 	                  },
 	            	options: {
 	            		scales: {
-	            			yAxes: [
-	            				{
-	            					ticks: {
-	            						beginAtZero: true
-	            					}
-	            				}
-	            			]
-	            		}
-	            	}
-	            });
-         </script>
-         </div>
-         </select>
-
-
->>>>>>> a74eea2dd4542373f26647263b53a7f1b2a275c9
          </select>
 
 
