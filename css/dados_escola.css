@@ -13,8 +13,11 @@ transition: 3s;
 
 }
 #buttom{
-background: rgba (0,0,0,0.7);
-
+  background: rgba (0,0,0,0.7);
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 100px;
 }  
 #buttom:hover{
 background: #F28A02;
@@ -228,13 +231,7 @@ padding: 30px;
 }
 
 
-#buttom{
-  display: block;
-  margin: 0 auto;
-  padding: 10px;
-  margin-top: 100px;
-  background: green;
-}
+
 #map{
   display: flex;
   justify-content: center;
