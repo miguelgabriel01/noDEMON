@@ -188,7 +188,7 @@
           <input type="hidden" name="id" crequired="" value="<?= $_SESSION["logado"]["id"] ?>">
           <input type="hidden" name="nome" required="" value="<?= $_SESSION["logado"]["nome"] ?>">
           <input type="hidden" name="id_escola" required="" value="<?= $id ?>">
-
+<!-- 
           <?php
         if(!isset($_SESSION['logado'])) :?>
 
@@ -213,7 +213,7 @@
         </li>
 
       </ul>
-    <?php endforeach ?>
+    <?php endforeach ?> -->
     </section>
 </body>
 
