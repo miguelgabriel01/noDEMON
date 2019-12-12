@@ -18,7 +18,7 @@
 <section class="imgP">
 
 	<div class="principal">
-	<h2>Cadastrar Escolas</h2>
+	<h2>Cadastrar Notas</h2>
 
 	<form action="../controller/cadastrar_notas.php" method="POST">
 
