@@ -179,42 +179,7 @@
         <button id="buttom"><a href="comparar_escola.php">Comparar Notas</a></button>
 
  </section>
-<!--
-  <section class="duvidas">
-    <div class="principal">
-      <h2>Comentários</h2>
-      <form method="POST" action="../controller/cadastrar_comentario.php">
-        <div class="meio">
-          <input type="hidden" name="id" crequired="" value="<?= $_SESSION["logado"]["id"] ?>">
-          <input type="hidden" name="nome" required="" value="<?= $_SESSION["logado"]["nome"] ?>">
-          <input type="hidden" name="id_escola" required="" value="<?= $id ?>">
-<!-- 
-          <?php
-        if(!isset($_SESSION['logado'])) :?>
- -->
 
-          <h1>Você precisa está logado para comentar.</h1>
-
-
-          <?php endif ?>        </div>
-
-
-        <textarea placeholder="Comentários" name="comment" required=""></textarea>
-        <input type="submit" id="enviarEmail" name="" value="Enviar">
-      </form>
-    </div>
-    <?php foreach($comment->Link($id) as $dados) : ?>
-      <ul id="tt">
-        <li>
-          <h1><?= $dados["nome"] ?></h1><br>
-          <p>
-            <?= $dados["comment"] ?>
-          </p>
-        </li>
-
-      </ul>
-    <?php endforeach ?> -->
-    </section>
 </body>
 
 </html>
