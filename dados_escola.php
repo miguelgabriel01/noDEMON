@@ -178,8 +178,8 @@
         <div class="meio">
         <button id="buttom"><a href="comparar_escola.php">Comparar Notas</a></button>
 
-<!--   </section>
-
+ </section>
+<!--
   <section class="duvidas">
     <div class="principal">
       <h2>Comentários</h2>
