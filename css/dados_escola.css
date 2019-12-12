@@ -12,6 +12,16 @@ list-style: none;
 transition: 3s;
 
 }
+#buttom{
+background: rgba (0,0,0,0.7);
+
+}  
+#buttom:hover{
+background: #F28A02;
+
+}  
+
+
 a{
 text-decoration: none;
 color: #FFF;
