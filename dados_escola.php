@@ -176,7 +176,7 @@
 
          </div>
         <div class="meio">
-        <button id="buttom"><a href="comparar_escola.php">Comparar Notas</a></button>
+        <button id="buttom"><a href="comparar_escola.php">COMPARAR NOTAS</a></button>
 
  </section>
 
